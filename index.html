@@ -3,13 +3,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>عنوان</title>
+    <title>cleanUp</title>
     <link rel="icon" type="icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/harmony.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/aos.css" />
   </head>
   <body>
@@ -17,114 +17,169 @@
     <div class="wrapper">
       <!-- header sticky -->
       <header>
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="logo">
-              <a href="" target="_blank">
-                <img src="assets/images/logo.png" loading="lazy" alt="" />
-              </a>
-            </div>
-            <a class="btn callToAction" href="#">call to action</a>
+        <!-- navbar -->
+        <nav class="navbar">
+          <div class="container">
+            <a href="#">خانه</a>
+            <a href="#">محصولات</a>
+            <a href="#">بلاگ</a>
+            <a href="#">درباره ما</a>
+            <a href="#">تماس با ما</a>
+            <a href="#">باشگاه مشتریان</a>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.png" loading="lazy" />
+            </a>
           </div>
-        </div>
+        </nav>
       </header>
-
-      <!-- navbar -->
-      <nav class="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" loading="lazy" />
-          </a>
-          <a href="#register" class="btn btn-register">ثبت نام</a>
-        </div>
-      </nav>
-
       <!-- motion -->
-      <section id="meeting">
-        <div class="container">
-          <div class="meeting row">
-            <div class="content">
-              <div class="row">
-                <div class="col-md-6 col-sm-12 caption">
-                  <h2 class="section-title">motion</h2>
-                  <p>caption</p>
+      <section id="slide">
+        <div class="swiper slideSwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image: url(assets/images/slider1.jpg)"
+            >
+              <div class="container">
+                <div class="content">
+                  <h1>کلین آپ, لایه‌های نرم زندگی</h1>
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                    چاپ، و با ل
+                  </p>
+                  <a href="" class="btn btn-success">کال تو اکشن</a>
                 </div>
-                <div class="col-md-6 col-sm-12 videoBox">
-                  <div
-                    class="video-img"
-                    data-bs-toggle="modal"
-                    data-bs-target="#motion"
-                  >
-                    <img
-                      src="assets/images/videoImg.png"
-                      alt=""
-                      loading="lazy"
-                    />
-                  </div>
-                  <!-- Motion Modal -->
-                  <div
-                    class="modal fade motion-modal"
-                    id="motion"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabindex="-1"
-                    aria-labelledby="staticBackdropLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="motionVideo">
-                            <video controls>
-                              <source src="./assets/video/" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="picture">
+                  <img src="assets/images/img-slide1.png" alt="" />
                 </div>
               </div>
             </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(assets/images/slider1.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(assets/images/slider1.jpg)"
+            ></div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </section>
 
       <!-- counter -->
-      <section id="counter">
-        <div class="container text-center">
-          <h2 class="section-title">counter</h2>
-          <div class="row">
-            <div class="col-md-3 col-6">
-              <div class="value counter">1000</div>
-              <div class="counterTitle">title</div>
-              <div class="counterCaption">caption</div>
-              <hr class="mobile" />
+      <section id="product">
+        <div class="container">
+          <h1>محصولات کلین آپ</h1>
+          <ul class="nav nav-pills desktop" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="box-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#box"
+                type="button"
+                role="tab"
+                aria-controls="box"
+                aria-selected="false"
+              >
+                <img src="./assets/images/boxImg.png" alt="" />
+                <span class="box-cat">جعبه</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="toilet-paper-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#toilet-paper"
+                type="button"
+                role="tab"
+                aria-controls="toilet-paper-"
+                aria-selected="true"
+              >
+                <img src="./assets/images/getImg.png" alt="" />
+                <span class="toilet-paper-">کاغذ توالت</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="paper-towel-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#paper-towel"
+                type="button"
+                role="tab"
+                aria-controls="paper-towel"
+                aria-selected="true"
+              >
+                <img src="./assets/images/getImg.png" alt="" />
+                <span class="paper towel">حوله کاغذی</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="economical-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#economical"
+                type="button"
+                role="tab"
+                aria-controls="economical"
+                aria-selected="true"
+              >
+                <img src="./assets/images/getImg.png" alt="" />
+                <span class="economical">دستمال اقتصادی</span>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content desktop" id="pills-tabContent">
+            <div
+              class="tab-pane fade active show"
+              id="box"
+              role="tabpanel"
+              aria-labelledby="box-tab"
+            >
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="box">
+                    <img src="assets/images/product1.jpg" alt="" />
+                    <div class="card-footer">
+                      <span class="category">250 برگ</span>
+                      <a href="">مشاهده <i class="fas fa-angle-left"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="btn btn-success">همه محصولات</a>
             </div>
-            <div class="col-md-3 col-6">
-              <div class="value counter">1000</div>
-              <div class="counterTitle">title</div>
-              <div class="counterCaption">caption</div>
-              <hr class="mobile" />
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="value counter">1000</div>
-              <div class="counterTitle">title</div>
-              <div class="counterCaption">caption</div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="value counter">1000</div>
-              <div class="counterTitle">title</div>
-              <div class="counterCaption">caption</div>
-            </div>
+            <div
+              class="tab-pane fade"
+              id="toilet-paper"
+              role="tabpanel"
+              aria-labelledby="toilet-paper-tab"
+            ></div>
+            <div
+              class="tab-pane fade"
+              id="paper-towel"
+              role="tabpanel"
+              aria-labelledby="paper-towel-tab"
+            ></div>
+            <div
+              class="tab-pane fade"
+              id="toilet-paper"
+              role="tabpanel"
+              aria-labelledby="toilet-paper-tab"
+            ></div>
+            <div
+              class="tab-pane fade"
+              id="economical"
+              role="tabpanel"
+              aria-labelledby="economical-tab"
+            ></div>
           </div>
         </div>
       </section>
@@ -132,315 +187,70 @@
       <!-- Design by Harmony Agency -->
 
       <!-- package -->
-      <section id="package">
-        <div class="container">
-          <h2 class="section-title">packages</h2>
-          <div class="package-items">
-            <div class="row">
-              <div class="col-md-4 col-sm-12 notzoom">
-                <div class="p-item">
-                  <div class="header pLeft">title</div>
-                  <div class="caption">caption</div>
-                  <div class="buyBox">
-                    <a
-                      href="https://www.skyroom.online/skyroom/order"
-                      target="_blank"
-                      class="buy"
-                    >
-                      button
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12 zoom middleBox" id="freePackage">
-                <div class="p-item">
-                  <div class="header pLeft">title</div>
-                  <div class="caption">caption</div>
-                  <div class="buyBox">
-                    <a
-                      href="https://www.skyroom.online/skyroom/order"
-                      target="_blank"
-                      class="buy"
-                    >
-                      button
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12 notzoom">
-                <div class="p-item">
-                  <div class="header pLeft">title</div>
-                  <div class="caption">caption</div>
-                  <div class="buyBox">
-                    <a
-                      href="https://www.skyroom.online/skyroom/order"
-                      target="_blank"
-                      class="buy"
-                    >
-                      button
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <section id="banner">
+        <div class="swiper bannerSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/banner.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/banner.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/banner.png" alt="" />
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!-- register -->
-      <section id="register">
-        <div class="container position-relative">
-          <div class="form-bg form-pd-center">
-            <h2 class="section-title">فرم ثبت نام</h2>
-            <p>توضیحات فرم ثبت نام</p>
-            <form id="subscriber">
-              <div class="form-group position-relative">
-                <i class="far fa-user iconPlaceholder"></i>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="form-control"
-                  placeholder="نام و نام خانوادگی"
-                />
+      <section id="event">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box">
+                <img src="assets/images/event1.jpg" alt="" />
               </div>
-              <div class="form-group">
-                <i class="fas fa-phone iconPlaceholder"></i>
-                <input
-                  type="number"
-                  name="phone"
-                  id="phone"
-                  class="form-control"
-                  placeholder="0919..."
-                />
+            </div>
+            <div class="col-md-4">
+              <div class="box">
+                <img src="assets/images/event2.jpg" alt="" />
               </div>
-              <button type="submit" class="btn btn-register">ثبت‌نام</button>
-            </form>
-            <div class="errorValidate"></div>
-            <div class="result"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="box">
+                <img src="assets/images/event3.jpg" alt="" />
+              </div>
+            </div>
           </div>
+          <a href="" class="btn btn-success">صفحه اینستاگرام ما</a>
         </div>
       </section>
 
       <!-- Design by Harmony Agency -->
 
       <!-- brands -->
-      <section id="brands" class="py">
+      <section id="about">
         <div class="container">
-          <div class="brands-items">
-            <div class="row">
-              <div class="col-2">
-                <div class="p-item text-center">
-                  <img
-                    src="assets/images/snappLogo.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <!--col-2-->
-              <div class="col-2">
-                <div class="p-item text-center">
-                  <img src="" alt="" loading="lazy" />
-                </div>
-              </div>
-              <!--col-2-->
-              <div class="col-2">
-                <div class="p-item text-center">
-                  <img src="" alt="" loading="lazy" />
-                </div>
-              </div>
-              <!--col-2-->
-              <div class="col-2">
-                <div class="p-item text-center">
-                  <img src="" alt="" loading="lazy" />
-                </div>
-              </div>
-              <!--col-2-->
-              <div class="col-2">
-                <div class="p-item text-center">
-                  <img src="" alt="" loading="lazy" />
-                </div>
-              </div>
-              <!--col-2-->
+          <div class="row">
+            <div class="col-md-6">
+              <img src="assets/images/about.png" alt="" />
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!--testimonial-->
-      <section id="testimonial">
-        <div class="container">
-          <div class="swiper mySwiper">
-            <h2 class="section-title">نظرات مشتریان</h2>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-slide">
-                  <div class="testimonialHeader d-flex align-items-center">
-                    <div class="slideImg">
-                      <img
-                        src="assets/images/profile.png"
-                        alt=""
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="testimonial-title">
-                      <p class="t-name">نام و نام خانوادگی</p>
-                      <p class="customer">مشتری</p>
-                    </div>
-                  </div>
-                  <div class="comment-text">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است وه از طراحان گرافیک
-                    است.
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-slide">
-                  <div class="testimonialHeader d-flex align-items-center">
-                    <div class="slideImg">
-                      <img
-                        src="assets/images/profile.png"
-                        alt=""
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="testimonial-title">
-                      <p class="t-name">نام و نام خانوادگی</p>
-                      <p class="customer">مشتری</p>
-                    </div>
-                  </div>
-                  <div class="comment-text">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است وه از طراحان گرافیک
-                    است.
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-slide">
-                  <div class="testimonialHeader d-flex align-items-center">
-                    <div class="slideImg">
-                      <img
-                        src="assets/images/profile.png"
-                        alt=""
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="testimonial-title">
-                      <p class="t-name">نام و نام خانوادگی</p>
-                      <p class="customer">مشتری</p>
-                    </div>
-                  </div>
-                  <div class="comment-text">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است وه از طراحان گرافیک
-                    است.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Design by Harmony Agency -->
-
-      <!-- faq -->
-      <section id="faq">
-        <div class="container">
-          <h2 class="section-title">سوالات متداول</h2>
-          <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  type="button"
-                  class="accordion-button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                >
-                  <span>title1</span>
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#myAccordion"
-              >
-                <div class="card-body">
-                  <p>caption1</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  type="button"
-                  class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                >
-                  <span> title2</span>
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#myAccordion"
-              >
-                <div class="card-body">
-                  <p>caption2</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  type="button"
-                  class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                >
-                  <span> title3 </span>
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#myAccordion"
-              >
-                <div class="card-body">
-                  <p>caption3</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  type="button"
-                  class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                >
-                  <span> title4 </span>
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                data-bs-parent="#myAccordion"
-              >
-                <div class="card-body">
-                  <p>caption4</p>
-                </div>
-              </div>
+            <div class="col-md-6">
+              <h1>درباره برند کلین آپ و محصولاتش</h1>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                ...
+              </p>
+              <a href="" class="btn btn-success">درباره ما</a>
             </div>
           </div>
         </div>
@@ -448,43 +258,29 @@
 
       <!-- footer -->
       <footer>
-        <div class="content">
-          <a href="#" target="_blank">
-            <img src="" alt="" />
-          </a>
-          <div class="d-flex social-icon">
-            <a href="" target="_blank" rel="noindex,nofollow"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="" target="_blank" rel="noindex,nofollow"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </div>
-          <div class="copyright">
-            <a
-              href="https://harmony.agency/?utm_source=designbyharmony&amp;utm_medium=badge&amp;utm_campaign=adsl-landing"
-              target="_blank"
-            >
-              <span class="hover-company desktop">
-                <img
-                  src="assets/images/harmony-name.png"
-                  loading="lazy"
-                  alt=""
-                />
-              </span>
-              <img
-                class="logo desktop"
-                src="assets/images/harmony.png"
-                loading="lazy"
-                alt=""
-              />
-              <span class="hover-company desktop">Design by</span>
-              <img
-                src="assets/images/harmonyLogoMobile.png"
-                alt=""
-                class="mobile harmonyLogo"
-              />
-            </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="title">محصولات</div>
+              <ul>
+                <li><a href="">جعبه</a></li>
+                <li><a href="">حوله کاغذی</a></li>
+                <li><a href="">کاغذ توالت</a></li>
+                <li><a href="">دستمال اقتصادی</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <div class="title">دسترسی</div>
+              <ul>
+                <li><a href="">درباره ما</a></li>
+                <li><a href="">فعالیت‌های کلین آپ</a></li>
+                <li><a href="">وبلاگ</a></li>
+                <li><a href=""> سوالات متداول</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <img src="assets/images/logo-footer.png" alt="" />
+            </div>
           </div>
         </div>
       </footer>
@@ -494,12 +290,8 @@
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.countup.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/waypoint.js"></script>
     <script src="assets/js/harmony.js"></script>
   </body>
 </html>
