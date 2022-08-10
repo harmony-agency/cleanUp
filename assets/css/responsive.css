@@ -1,261 +1,185 @@
 /*============== mobile abd tablet ==================*/
 @media screen and (max-width: 768px) {
-  header.stickyHeader .callToAction {
+  .btnCall {
+    height: 36px;
+    margin: 0 auto;
+    padding: 6px 20px;
+    border-radius: 10px;
     font-weight: 700;
     font-size: 12px;
-    padding: 10px;
   }
-  header.stickyHeader .logo {
-    max-width: 160px;
+  .section-title {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 30px;
   }
+  /*================================ stickyHeader ================================*/
 
-  header {
-    display: none;
-  }
   .stickyHeader {
-    display: block;
+    width: 100%;
     position: fixed;
-    top: unset;
-    bottom: 0;
-    padding: 5px 0;
+    top: 0;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
   }
-
-  /*================================ motion ================================*/
-  #meeting .meeting .video-img,
-  #meeting .meeting .video-img img {
-    height: auto;
-  }
-
-  /*================================ package ================================*/
-  #package .notzoom:hover {
-    transform: unset;
-  }
-
-  #package .zoom {
-    transform: unset;
-  }
-
-  #package .package-items {
-    padding: 0 45px;
-  }
-  #package .p-item {
-    background-image: url(../images/packageBgMobile.png);
-    margin: 0 auto;
-    width: auto;
-    height: auto;
-    margin-bottom: 16px;
-  }
-  #package .section-title {
-    margin-bottom: 16px;
-  }
-  #package .p-item .header {
-    font-size: 16px;
-    margin-bottom: 23px;
-  }
-  #package .p-item .caption {
-    font-size: 14px;
-  }
-
-  #package .p-item .pricebox p {
-    font-size: 18px;
-  }
-  #package .p-item .buy {
-    font-weight: bold;
-    font-size: 11px;
-    border-radius: 16px;
-    padding: 7px 21px;
-  }
-  #package .middleBox {
-    transform: scale(1);
-  }
-  #package .p-item .free {
-    font-weight: bold;
-    font-size: 12px;
-    color: #000;
-    border-radius: 17px;
-    padding: 7px 21px;
-  }
-  #package .middleBox {
-    min-height: 180px;
-  }
-  #package .middleBox .p-item .caption {
-    padding: 0;
-  }
-
-  /*================================ register ================================*/
-  #register .form-bg {
-    text-align-last: center;
-
-    padding: 15rem 1rem 1rem;
-  }
-  #register .form-bg h3 {
-    font-size: 18px;
-  }
-
-  #register .form-bg form {
-    width: 100%;
-  }
-
-  #register .form-bg p {
-    text-align: center;
-
-    text-align-last: center;
-
-    font-size: 14px;
-
-    margin: 0 auto;
-
-    width: 100%;
-  }
-
-  #register .container {
-    background: #293897;
-  }
-
-  #register .subscriberImg {
-    position: absolute;
-
-    top: -9%;
-
-    right: 77px;
-
-    width: 65%;
-  }
-
-  #register .form-group input::placeholder {
-    text-align: right;
-  }
-
-  /*================================ testimonial ================================*/
-  #testimonial .swiper h2 {
-    margin-bottom: 1rem;
-    font-size: 24px;
-  }
-  #testimonial .testimonial-slide {
-    max-width: 100%;
-    padding: 12px;
-  }
-  #testimonial .swiper-button-next,
-  #testimonial .swiper-button-prev {
-    display: none;
-  }
-  #testimonial .testimonial-title {
-    display: inline-block;
-    margin: 0 auto;
-  }
-  #testimonial .slideImg {
-    display: inline-block;
-  }
-  #testimonial .comment-text {
-    font-size: 12px;
-    padding: 8px;
-    line-height: 2;
-    text-align: justify;
-    text-align-last: right;
-  }
-  #testimonial .t-name {
-    font-size: 14px;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-  #testimonial .testimonial-slide .slideImg {
-    width: 65px;
-    margin: 0;
-  }
-  #testimonial .testimonial-slide {
-    min-height: 415px;
-    direction: ltr;
-    padding: 21px 12px 12px;
-  }
-
-  #testimonial .swiper {
-    width: 100%;
-    height: 572px;
-  }
-  #testimonial .swiper-slide {
-    padding: 0 5px;
-    height: 505px;
-  }
-  #testimonial .testimonialHeader {
+  .mobileNav {
+    height: 70px;
+    padding: 15px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
-
-  /*================================ faq ================================*/
-  #faq {
-    margin-bottom: 0;
+  .mobileNav i {
+    color: #00a19a;
   }
-
-  #faq .section-title {
-    text-align-last: center;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 16px;
+  .mobileNav img {
+    max-width: 90px;
   }
-  .accordion-item {
-    margin-bottom: 15px;
-    padding: 0;
-    text-align: center;
-    text-align-last: center;
-    border-radius: 4px;
+  /*================================ slide ================================*/
+  #slide .swiper-wrapper {
+    max-height: 550px;
   }
-  .accordion-item .accordion-button {
-    font-size: 12px;
-    text-align: right;
-    padding: 0 0 0 20px;
+  #slide h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
-  .accordion-item .card-body {
-    padding: 0;
-    text-align: center;
-    text-align-last: center;
-    margin: 0 auto;
-    padding: 19px 20px;
-    max-width: 100%;
-  }
-  .accordion-header {
-    padding: 10px 31px 7px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: bold;
-  }
-  .accordion-button:not(.collapsed)::after,
-  .accordion-button::after {
-    position: absolute;
-    left: -6px;
-    filter: brightness(0) invert(1);
-  }
-  .accordion-button::before {
-    left: -9px;
-  }
-  #faq .accordion .accordion-button:not(.collapsed) span {
-    border: none;
-  }
-  .accordion-item .card-body p {
-    text-align: center;
-    text-align-last: center;
+  #slide p {
     font-weight: 400;
     font-size: 12px;
-    margin-bottom: 0;
+    text-align: right;
+    margin-bottom: 37px;
   }
-  .accordion-item:first-of-type {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+  #slide .content {
+    width: 100%;
   }
-  .accordion-item:not(:first-of-type) {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+  #slide .container {
+    position: unset;
+  }
+  #slide .swiper-slide {
+    background-image: url(../images/slider1Mobile.png);
+    background-position: top;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 70px;
+    position: relative;
+    border-radius: 0 0 60px 60px;
+    max-height: 500px;
+  }
+  #slide .picture {
+    position: absolute;
+    left: 20%;
+    top: unset;
+    bottom: -3%;
+    max-width: 70%;
+    z-index: 1000;
   }
 
-  /*================================ faq ================================*/
+  #slide .btn-success {
+    background: #ffffff;
+    border-radius: 10px;
+    color: #00a19a;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  #slide .swiper-button-next,
+  #slide .swiper-button-prev {
+    display: none;
+  }
+  #slide .btnCall {
+    background: #ffffff;
+    color: #00a19a;
+    margin-right: 0;
+  }
+
+  /*================================ product ================================*/
+  #product .nav-pills {
+    flex-wrap: nowrap;
+  }
+  #product h1 {
+    font-weight: 700;
+    font-size: 21px;
+  }
 }
 
-/* other size of viewport */
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 1000px;
-    margin: 1.75rem auto;
-  }
+/*================================ banner ================================*/
+#banner .swiper-button-next,
+#banner .swiper-button-prev {
+  display: none;
+}
+#banner .swiper-pagination-bullet {
+  background: #fff;
+  border: 1px solid #505860;
+  opacity: 1;
+}
+#banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #00a19a;
+  border: none;
+}
+.bannerSwiper {
+  max-height: 200px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+/*================================ event ================================*/
+#event .row {
+  flex-wrap: nowrap;
+}
+/*================================ about ================================*/
+
+#about h1 {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+#about .row .col-md-6:first-child {
+  order: 1;
+}
+#about .btnCall {
+  margin-bottom: 40px;
+}
+/*================================ footer ================================*/
+
+footer {
+  text-align: center;
+  text-align-last: center;
+  border-radius: 60px 60px 0px 0px;
+  padding: 30px 0;
+}
+footer .container {
+  padding: 0;
+}
+footer i {
+  font-size: 12px;
+}
+footer .address P {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  text-align-last: center;
+}
+footer .address strong {
+  font-weight: 700;
+  font-size: 12px;
+}
+footer .connection {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+footer .connection .box p {
+  font-weight: 400;
+  font-size: 12px;
+}
+footer .socials {
+  justify-content: center;
+}
+footer .content {
+  padding: 0 15px 44px;
+}
+footer .harmonyLogo {
+  margin: 0 auto;
+}
+footer .address {
+  margin-bottom: 20px;
 }
