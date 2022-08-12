@@ -9,43 +9,50 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/harmony.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css" /> -->
     <link rel="stylesheet" href="assets/css/aos.css" />
   </head>
   <body>
     <!-- Design by Harmony Agency -->
     <div class="wrapper">
-      <!-- header sticky -->
-      <header>
-        <nav class="mobileNav mobile">
-          <i class="fa-solid fa-bars"></i>
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" loading="lazy" />
-          </a>
-        </nav>
-        <!-- navbar -->
-        <nav class="navbar desktop">
-          <div class="container">
-            <a href="#">خانه</a>
-            <a href="#">محصولات</a>
-            <a href="#">بلاگ</a>
-            <a href="#">درباره ما</a>
-            <a href="#">تماس با ما</a>
-            <a href="#">باشگاه مشتریان</a>
-            <a class="navbar-brand" href="#">
-              <img src="assets/images/logo.png" loading="lazy" />
-            </a>
-          </div>
-        </nav>
-      </header>
-
       <!-- slide -->
       <section id="slide">
+        <!-- header sticky -->
+        <header>
+          <div class="container">
+            <nav class="mobileNav mobile">
+              <i class="fa-solid fa-bars"></i>
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" loading="lazy" />
+              </a>
+            </nav>
+            <!-- navbar -->
+            <nav class="navbar desktop">
+              <div class="container">
+                <div class="navItems">
+                  <a href="#">خانه</a>
+                  <a href="#">محصولات</a>
+                  <a href="#">بلاگ</a>
+                  <a href="#">درباره ما</a>
+                  <a href="#">تماس با ما</a>
+                  <a href="#">باشگاه مشتریان</a>
+                </div>
+                <a class="navbar-brand" href="#">
+                  <img src="assets/images/logo.png" loading="lazy" />
+                </a>
+              </div>
+            </nav>
+          </div>
+        </header>
         <div class="swiper slideSwiper">
           <div class="swiper-wrapper">
             <div
               class="swiper-slide"
-              style="background-image: url(assets/images/slider1.jpg)"
+              style="
+                background-image: url(assets/images/slide.png);
+                background-size: cover;
+                background-repeat: no-repeat; ;
+              "
             >
               <div class="container">
                 <div class="content">
@@ -65,12 +72,52 @@
             </div>
             <div
               class="swiper-slide"
-              style="background-image: url(assets/images/slider1.jpg)"
-            ></div>
+              style="
+                background-image: url(assets/images/slide.png);
+                background-size: cover;
+                background-repeat: no-repeat; ;
+              "
+            >
+              <div class="container">
+                <div class="content">
+                  <h1>کلین آپ, لایه‌های نرم زندگی</h1>
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                    چاپ، و با ل
+                  </p>
+                  <a href="" class="btnCall">کال تو اکشن</a>
+                </div>
+                <div class="picture">
+                  <img src="assets/images/img-slide1.png" alt="" />
+                </div>
+              </div>
+            </div>
             <div
               class="swiper-slide"
-              style="background-image: url(assets/images/slider1.jpg)"
-            ></div>
+              style="
+                background-image: url(assets/images/slide.png);
+                background-size: cover;
+                background-repeat: no-repeat; ;
+              "
+            >
+              <div class="container">
+                <div class="content">
+                  <h1>کلین آپ, لایه‌های نرم زندگی</h1>
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                    چاپ، و با ل
+                  </p>
+                  <a href="" class="btnCall">کال تو اکشن</a>
+                </div>
+                <div class="picture">
+                  <img src="assets/images/img-slide1.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -94,6 +141,7 @@
                 aria-selected="false"
               >
                 <img src="./assets/images/boxImg.png" alt="" />
+
                 <span class="box-cat">جعبه</span>
               </button>
             </li>
@@ -108,8 +156,9 @@
                 aria-controls="toilet-paper-"
                 aria-selected="true"
               >
-                <img src="./assets/images/getImg.png" alt="" />
-                <span class="toilet-paper-">کاغذ توالت</span>
+                <img src="./assets/images/paperImg.png" alt="" />
+
+                <span class="box-cat toilet-paper-">کاغذ توالت</span>
               </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -123,8 +172,8 @@
                 aria-controls="paper-towel"
                 aria-selected="true"
               >
-                <img src="./assets/images/getImg.png" alt="" />
-                <span class="paper towel">حوله کاغذی</span>
+                <img src="./assets/images/towel.png" alt="" />
+                <span class="box-cat paper towel">حوله کاغذی</span>
               </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -138,8 +187,8 @@
                 aria-controls="economical"
                 aria-selected="true"
               >
-                <img src="./assets/images/getImg.png" alt="" />
-                <span class="economical">دستمال اقتصادی</span>
+                <img src="./assets/images/economicalImg.png" alt="" />
+                <span class="box-cat economical">دستمال اقتصادی</span>
               </button>
             </li>
           </ul>
@@ -157,7 +206,9 @@
                       <img src="assets/images/product1.jpg" alt="" />
                       <div class="card-footer">
                         <span class="category">کلکسیون دکوراسیون</span>
-                        <a href="">مشاهده <i class="fas fa-angle-left"></i></a>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -166,7 +217,9 @@
                       <img src="assets/images/product2.jpg" alt="" />
                       <div class="card-footer">
                         <span class="category">بافت</span>
-                        <a href="">مشاهده <i class="fas fa-angle-left"></i></a>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -175,7 +228,9 @@
                       <img src="assets/images/product3.jpg" alt="" />
                       <div class="card-footer">
                         <span class="category">250 برگ</span>
-                        <a href="">مشاهده <i class="fas fa-angle-left"></i></a>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -184,7 +239,9 @@
                       <img src="assets/images/product1.jpg" alt="" />
                       <div class="card-footer">
                         <span class="category">۱۵۰ برگ</span>
-                        <a href="">مشاهده <i class="fas fa-angle-left"></i></a>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -227,26 +284,38 @@
 
       <section id="sectionCombine">
         <img src="./assets/images/cloud.png" alt="" class="topCloud desktop" />
+
         <!-- banner -->
         <section id="banner">
           <h1 class="section-title">رویدادهای کلین آپ</h1>
           <div class="swiper bannerSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="assets/images/banner.png" alt="" />
+                <div
+                  class="content"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  <img src="assets/images/banner.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/images/banner.png" alt="" />
+                <div class="content">
+                  <img src="assets/images/banner.png" alt="" />
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/images/banner.png" alt="" />
+                <div class="content">
+                  <img src="assets/images/banner.png" alt="" />
+                </div>
               </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination">555</div>
+            <div class="swiper-pagination"></div>
           </div>
         </section>
+
         <!-- event -->
         <section id="event">
           <div class="container">
@@ -263,8 +332,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="box">
-                  <img src="assets/images/event3.jpg" alt="" />
+                <div class="boxHover">
+                  <img src="./assets/images/logo-footer.png" alt="" class="" />
+                  <p>مارا در اینستاگرام دنبال کنید</p>
+                  <div class="socialsBox">
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -341,7 +416,6 @@
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
                   </p>
                 </div>
-
                 <div class="connection">
                   <div class="box">
                     <p>Info@Cleanup</p>
@@ -360,12 +434,12 @@
                   </div>
                   <div class="socialsBox">
                     <a href="#">
-                      <img src="./assets/images/instagram.png" alt="" />
+                      <i class="fa-brands fa-instagram"></i>
                     </a>
                   </div>
                   <div class="socialsBox">
                     <a href="#">
-                      <img src="./assets/images/whatsapp.png" alt="" />
+                      <i class="fa-brands fa-whatsapp"></i>
                     </a>
                   </div>
                 </div>
@@ -403,6 +477,29 @@
     </div>
 
     <!-- Design by Harmony Agency -->
+
+    <!-- modal1 -->
+    <div
+      class="modal fade"
+      id="modal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>

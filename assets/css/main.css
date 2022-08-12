@@ -1,17 +1,22 @@
 a:hover {
   color: #fff;
 }
+.myImg {
+  fill: #00a19a;
+}
 .section-title {
   font-weight: 700;
   font-size: 40px;
   color: #00a19a;
-  margin: 0 auto 80px;
+  margin: 0 auto 70px;
   text-align: center;
 }
 .btnCall {
   width: fit-content;
   height: 60px;
   color: #fff;
+  font-weight: 700;
+  font-size: 18px;
   background-color: #00a19a;
   background: #00a19a;
   border-radius: 19px;
@@ -25,9 +30,38 @@ a:hover {
 .btnCall :hover {
   color: #fff;
 }
+/*============== header ==================*/
+header {
+  padding: 20px 0;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .navItems a {
+  margin-left: 40px;
+}
+header .navbar .navItems a:hover {
+  color: #00a19a;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+header .navbar-brand {
+  padding: 0;
+}
+/* .stickyHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
+} */
+
 /*============== Slider ==================*/
 #slide {
   padding: 0;
+  margin-bottom: 70px;
 }
 
 #slide .container {
@@ -41,23 +75,47 @@ a:hover {
 }
 #slide h1 {
   font-size: 68px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 #slide p {
+  font-weight: 400;
   font-size: 21px;
+  text-align: right;
+  text-align-last: right;
+  margin-bottom: 50px;
 }
 #slide .picture {
   position: absolute;
-  left: -36px;
-  top: 30px;
+  left: -50px;
+  bottom: 15px;
+  max-width: 50%;
 }
 #slide .swiper-wrapper {
   max-height: 800px;
 }
 #slide .content {
-  width: 55%;
+  width: 70%;
 }
 #slide .swiper-slide {
   display: flex;
+}
+#slide .slideSwiper .swiper-button-next::after,
+#slide .slideSwiper .swiper-button-prev::after {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+#slide .slideSwiper .swiper-button-next {
+  left: 70px;
+}
+#slide .slideSwiper .swiper-button-prev {
+  right: 70px;
+}
+#slide .btnCall {
+  margin-right: 0;
+  background-color: #fff;
+  color: #00a19a;
 }
 /*============== Product ==================*/
 #product {
@@ -71,21 +129,28 @@ a:hover {
   backdrop-filter: blur(30px);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 100px;
 }
 #product h1 {
   color: #00a19a;
   text-align: center;
 }
 #product .nav-pills {
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   border-bottom: 1px solid #99a5b1;
-  width: fit-content;
   margin: 0 auto;
 }
 #product .nav-pills .nav-link {
   color: #505860;
   background-color: transparent;
   border-radius: 0;
+  padding: 0 30px 30px;
+}
+#product .nav-pills .nav-link .box-cat {
+  font-weight: 700;
+  font-size: 21px;
+  margin-right: 10px;
 }
 #product .nav-pills .nav-link.active {
   border-bottom: 2px solid #00a19a;
@@ -96,17 +161,43 @@ a:hover {
   background: #ffffff;
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.0509804);
   border-radius: 40px;
-  padding: 10px;
+  padding: 10px 0;
   margin-bottom: 1rem;
 }
-
+#product .box:hover {
+  box-shadow: 0px 10px 50px rgba(23, 143, 136, 0.3);
+}
+#product .box img {
+  padding: 40px 30px;
+}
 #product .box .card-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  background-color: #fff;
+  background-color: transparent;
+}
+#product .box .card-footer .category {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+  text-align-last: right;
+  color: #505860;
+}
+#product .box .card-footer .seeAll {
+  color: #25398e;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+#product .box .card-footer .seeAll i {
+  margin-right: 6px;
+}
+.boxSwiper {
+  margin-bottom: 50px;
+  padding: 0 10px;
 }
 .boxSwiper .swiper-wrapper {
   max-height: 400px;
@@ -114,6 +205,9 @@ a:hover {
   flex-direction: row;
   align-content: center;
   align-items: center;
+}
+#product .swiper-slide-active .box {
+  box-shadow: 0px 3px 20px rgb(23 143 136 / 30%);
 }
 .boxSwiper .swiper-slide {
   height: fit-content;
@@ -126,14 +220,15 @@ a:hover {
 }
 
 .boxSwiper .swiper-button-next,
-.boxSwiper .swiper-button-prev {
+.boxSwiper .swiper-button-prev,
+.boxSwiper .swiper-pagination {
   display: none;
 }
 
 /*================================ sectionCombine ================================*/
 #sectionCombine {
   border-radius: 80px;
-  background-image: url(../images/sectionCombineBg.png);
+  /* background-image: url(../images/sectionCombineBg.png); */
   background-repeat: no-repeat;
   position: relative;
 }
@@ -149,18 +244,52 @@ a:hover {
 }
 /*================================ Banner ================================*/
 #banner .section-title {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
-#banner .swiper-slide img {
+#banner .swiper-slide .content {
+  position: relative;
+}
+#banner .swiper-slide .content img {
   opacity: 0.5;
 }
-#banner .swiper-slide-active img {
+#banner .swiper-slide-active .content img {
   opacity: 1;
 }
+#banner .swiper-slide-active .content::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/seeVideo.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#banner .swiper-slide-active .content::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -35%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/logo-footer.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0.7;
+}
 
-.bannerSwiper {
-  max-height: 600px;
+#banner .bannerSwiper {
+  max-height: 550px !important;
   position: relative;
+}
+#banner .swiper-horizontal > .swiper-pagination-bullets,
+#banner .swiper-pagination-bullets.swiper-pagination-horizontal,
+#banner .swiper-pagination-custom,
+#banner .swiper-pagination-fraction {
+  bottom: 50px;
+  left: -30%;
+  width: 100%;
 }
 #banner .swiper-button-next,
 #banner .swiper-button-prev {
@@ -179,7 +308,21 @@ a:hover {
   font-size: 24px;
 }
 #banner .swiper-button-next {
-  right: 60px;
+  right: 22%;
+}
+#banner .swiper-button-prev {
+  right: 18%;
+}
+#banner .swiper-pagination {
+  left: 18%;
+}
+#banner .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #3e45a2;
+  background: #fff;
+}
+#banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border: none;
+  background: #00a19a;
 }
 /*================================ Event ================================*/
 #event {
@@ -187,6 +330,7 @@ a:hover {
   background-image: url(../images/bg-cloud.png);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 80px;
 }
 #event .btnCall {
   margin-top: 60px;
@@ -196,9 +340,29 @@ a:hover {
   box-shadow: 0px 10px 50px rgb(23 143 136 / 30%);
   border-radius: 40px;
   padding: 10px;
-  margin-bottom: 1rem;
 }
-
+#event .boxHover {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 161, 154, 0.5);
+  border-radius: 40px;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#event .boxHover img {
+  margin-bottom: 30px;
+}
+#event .boxHover p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-align-last: center;
+  margin-bottom: 30px;
+}
 /*================================ About ================================*/
 #about {
   padding: 0;
@@ -254,7 +418,7 @@ footer .address {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 footer .address i {
   color: #fff;
@@ -283,7 +447,7 @@ footer .connection {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 footer .connection .box {
   padding: 0 12px;
@@ -310,7 +474,7 @@ footer .socials {
   align-items: center;
   justify-content: end;
 }
-footer .socialsBox {
+.socialsBox {
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -321,6 +485,10 @@ footer .socialsBox {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.socialsBox i {
+  color: #00a19a;
+  font-size: 40px;
 }
 /* footer copy right */
 footer .copyright {

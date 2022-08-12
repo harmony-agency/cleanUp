@@ -105,10 +105,10 @@
 }
 
 /*================================ banner ================================*/
-#banner .swiper-button-next,
+/* #banner .swiper-button-next,
 #banner .swiper-button-prev {
   display: none;
-}
+} */
 #banner .swiper-pagination-bullet {
   background: #fff;
   border: 1px solid #505860;

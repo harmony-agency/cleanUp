@@ -17,10 +17,10 @@ var slideswiper = new Swiper(".slideSwiper", {
 var bannerSwiper = new Swiper(".bannerSwiper", {
   slidesPerView: 1.5,
   centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 6000,
-  },
+  // loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
   navigation: {
     nextEl: ".bannerSwiper .swiper-button-next",
     prevEl: ".bannerSwiper .swiper-button-prev",
@@ -28,19 +28,20 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
   pagination: {
     el: ".bannerSwiper .swiper-pagination",
   },
-  // breakpoints: {
-  //   640: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20,
-  //   },
-  //   768: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 40,
-  //   },
-  //   1024: {
-  //     slidesPerView: 1.5,
-  //     spaceBetween: 50,
-  //   },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 50,
+    },
+  }
 });
 
 // hover for copy right
@@ -69,16 +70,16 @@ jQuery(function ($) {
 //  box carousels
 var boxSwiper = new Swiper(".boxSwiper", {
   // centeredSlides: true,
-  // loop: true,
-  autoplay: {
-    delay: 6000,
-  },
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
   navigation: {
-    nextEl: ".bannerSwiper .swiper-button-next",
-    prevEl: ".bannerSwiper .swiper-button-prev",
+    nextEl: ".boxSwiper .swiper-button-next",
+    prevEl: ".boxSwiper .swiper-button-prev",
   },
   pagination: {
-    el: ".bannerSwiper .swiper-pagination",
+    el: ".boxSwiper .swiper-pagination",
   },
   breakpoints: {
     640: {
@@ -87,11 +88,11 @@ var boxSwiper = new Swiper(".boxSwiper", {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
 });
