@@ -14,7 +14,9 @@
     margin-bottom: 30px;
   }
   /*================================ stickyHeader ================================*/
-
+  header {
+    padding: 0;
+  }
   .stickyHeader {
     width: 100%;
     position: fixed;
@@ -98,6 +100,24 @@
   #product .nav-pills {
     flex-wrap: nowrap;
   }
+  #product .nav-pills .nav-item {
+    margin-left: 10px;
+  }
+  #product .nav-pills .nav-link {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  #product .nav-pills .nav-link img {
+    max-width: 25px;
+  }
+  #product .nav-pills .nav-link .box-cat {
+    font-weight: 700;
+    font-size: 14px;
+  }
   #product h1 {
     font-weight: 700;
     font-size: 21px;
@@ -109,6 +129,23 @@
 #banner .swiper-button-prev {
   display: none;
 } */
+#banner .bannerSwiper {
+  max-height: 300px;
+  position: relative;
+}
+#banner .swiper-button-next,
+#banner .swiper-button-prev {
+  display: none;
+}
+#banner .swiper-horizontal > .swiper-pagination-bullets,
+#banner .swiper-pagination-bullets.swiper-pagination-horizontal,
+#banner .swiper-pagination-custom,
+#banner .swiper-pagination-fraction {
+  left: 0;
+}
+#banner .swiper-slide .content {
+  padding: 0 10px;
+}
 #banner .swiper-pagination-bullet {
   background: #fff;
   border: 1px solid #505860;
@@ -132,6 +169,12 @@
   font-weight: 700;
   font-size: 21px;
   margin-bottom: 25px;
+}
+#about p {
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0 5px;
+  margin-bottom: 30px;
 }
 #about .row .col-md-6:first-child {
   order: 1;

@@ -9,41 +9,42 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/harmony.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="assets/css/responsive.css" /> -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/aos.css" />
   </head>
   <body>
     <!-- Design by Harmony Agency -->
     <div class="wrapper">
-      <!-- slide -->
-      <section id="slide">
-        <!-- header sticky -->
-        <header>
-          <div class="container">
-            <nav class="mobileNav mobile">
-              <i class="fa-solid fa-bars"></i>
+      <!-- header sticky -->
+      <header>
+        <div class="container">
+          <nav class="mobileNav mobile">
+            <i class="fa-solid fa-bars"></i>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.png" loading="lazy" />
+            </a>
+          </nav>
+          <!-- navbar -->
+          <nav class="navbar desktop">
+            <div class="container">
+              <div class="navItems">
+                <a href="#" class="active">خانه</a>
+                <a href="#">محصولات</a>
+                <a href="#">بلاگ</a>
+                <a href="#">درباره ما</a>
+                <a href="#">تماس با ما</a>
+                <a href="#">باشگاه مشتریان</a>
+              </div>
               <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" loading="lazy" />
               </a>
-            </nav>
-            <!-- navbar -->
-            <nav class="navbar desktop">
-              <div class="container">
-                <div class="navItems">
-                  <a href="#">خانه</a>
-                  <a href="#">محصولات</a>
-                  <a href="#">بلاگ</a>
-                  <a href="#">درباره ما</a>
-                  <a href="#">تماس با ما</a>
-                  <a href="#">باشگاه مشتریان</a>
-                </div>
-                <a class="navbar-brand" href="#">
-                  <img src="assets/images/logo.png" loading="lazy" />
-                </a>
-              </div>
-            </nav>
-          </div>
-        </header>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- slide -->
+      <section id="slide">
         <div class="swiper slideSwiper">
           <div class="swiper-wrapper">
             <div
@@ -121,6 +122,7 @@
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -257,25 +259,178 @@
               id="toilet-paper"
               role="tabpanel"
               aria-labelledby="toilet-paper-tab"
-            ></div>
+            >
+              <div class="swiper toiletPaperSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product1.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">کلکسیون دکوراسیون</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product2.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">بافت</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product3.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">250 برگ</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product1.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">۱۵۰ برگ</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <a href="" class="btnCall">همه محصولات</a>
+            </div>
             <div
               class="tab-pane fade"
               id="paper-towel"
               role="tabpanel"
               aria-labelledby="paper-towel-tab"
-            ></div>
-            <div
-              class="tab-pane fade"
-              id="toilet-paper"
-              role="tabpanel"
-              aria-labelledby="toilet-paper-tab"
-            ></div>
+            >
+              <div class="swiper paperTowelSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product1.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">کلکسیون دکوراسیون</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product2.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">بافت</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product3.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">250 برگ</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product1.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">۱۵۰ برگ</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <a href="" class="btnCall">همه محصولات</a>
+            </div>
             <div
               class="tab-pane fade"
               id="economical"
               role="tabpanel"
               aria-labelledby="economical-tab"
-            ></div>
+            >
+              <div class="swiper economicalSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product1.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">کلکسیون دکوراسیون</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product2.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">بافت</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product3.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">250 برگ</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="box">
+                      <img src="assets/images/product1.jpg" alt="" />
+                      <div class="card-footer">
+                        <span class="category">۱۵۰ برگ</span>
+                        <a href="" class="seeAll"
+                          >مشاهده <i class="fas fa-angle-left"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <a href="" class="btnCall">همه محصولات</a>
+            </div>
           </div>
         </div>
       </section>

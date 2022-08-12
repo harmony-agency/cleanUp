@@ -1,9 +1,9 @@
 //  Slide carousels
 var slideswiper = new Swiper(".slideSwiper", {
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 6000,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: ".slideSwiper .swiper-button-next",
     prevEl: ".slideSwiper .swiper-button-prev",
@@ -15,7 +15,7 @@ var slideswiper = new Swiper(".slideSwiper", {
 
 //  banner carousels
 var bannerSwiper = new Swiper(".bannerSwiper", {
-  slidesPerView: 1.5,
+  // slidesPerView: 1,
   centeredSlides: true,
   // loop: true,
   // autoplay: {
@@ -67,9 +67,9 @@ jQuery(function ($) {
   });
 });
 
-//  box carousels
+//  boxSwiper
 var boxSwiper = new Swiper(".boxSwiper", {
-  // centeredSlides: true,
+  centeredSlides: true,
   loop: true,
   // autoplay: {
   //   delay: 6000,
@@ -80,6 +80,93 @@ var boxSwiper = new Swiper(".boxSwiper", {
   },
   pagination: {
     el: ".boxSwiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+//  toiletPaperSwiper
+var toiletPaperSwiper = new Swiper(".toiletPaperSwiper", {
+  // centeredSlides: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: ".toiletPaperSwiper .swiper-button-next",
+    prevEl: ".toiletPaperSwiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".toiletPaperSwiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+//  paperTowelSwiper 
+var paperTowelSwiper = new Swiper(".paperTowelSwiper", {
+  // centeredSlides: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: ".paperTowelSwiper .swiper-button-next",
+    prevEl: ".paperTowelSwiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".paperTowelSwiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+//  economicalSwiper
+var economicalSwiper = new Swiper(".economicalSwiper", {
+  // centeredSlides: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: ".economicalSwiper .swiper-button-next",
+    prevEl: ".economicalSwiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".economicalSwiper .swiper-pagination",
   },
   breakpoints: {
     640: {
