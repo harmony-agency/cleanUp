@@ -1,0 +1,331 @@
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cleanUp</title>
+    <link rel="icon" type="icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/harmony.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <style>
+      body {
+        background-image: url(./assets/images/categoryBg.png),
+          linear-gradient(
+            1.88deg,
+            #90ccca -22.4%,
+            rgba(238, 246, 246, 0.27) 98.41%
+          ); /* W3C */
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Design by Harmony Agency -->
+    <div class="wrapper">
+      <!-- header sticky -->
+      <header>
+        <div class="container">
+          <nav class="mobileNav mobile">
+            <i class="fa-solid fa-bars"></i>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.png" loading="lazy" />
+            </a>
+          </nav>
+          <!-- navbar -->
+          <nav class="navbar desktop">
+            <div class="container">
+              <div class="navItems">
+                <a href="#" class="active">خانه</a>
+                <a href="#" data-toggle="collapse" data-target="#products"
+                  >محصولات</a
+                >
+                <a href="#">بلاگ</a>
+                <a href="#">درباره ما</a>
+                <a href="#">تماس با ما</a>
+                <a href="#">باشگاه مشتریان</a>
+              </div>
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" loading="lazy" />
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section id="singleProduct">
+        <div class="container">
+          <div class="col-6 productImg">
+            <ul class="nav nav-pills" id="productImg-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="product1-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#product1"
+                  type="button"
+                  role="tab"
+                  aria-controls="product1"
+                  aria-selected="false"
+                >
+                  <img src="./assets/images/product1.jpg" alt="" />
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="product2-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#product2"
+                  type="button"
+                  role="tab"
+                  aria-controls="product2-"
+                  aria-selected="true"
+                >
+                  <img src="./assets/images/product2.jpg" alt="" />
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="product3-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#product3"
+                  type="button"
+                  role="tab"
+                  aria-controls="product3"
+                  aria-selected="true"
+                >
+                  <img src="./assets/images/product3.jpg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="tab-content" id="productImg-tabContent">
+              <div
+                class="tab-pane fade active show"
+                id="product1"
+                class="content"
+                role="tabpanel"
+                aria-labelledby="product1-tab"
+              >
+                <h1 class="title">جعبه 250 برگ</h1>
+                <p class="caption">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                  و با لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                  روزنامه و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                  صنعت چاپ، و با
+                </p>
+                <div class="properties">
+                  <div class="property property1">
+                    <span
+                      ><img src="./assets/images/property1.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                  <div class="property property2">
+                    <span
+                      ><img src="./assets/images/property2.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                  <div class="property property3">
+                    <span
+                      ><img src="./assets/images/property3.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="product2"
+                role="tabpanel"
+                aria-labelledby="product2-tab"
+              >
+                <h1 class="title">جعبه 250 برگ</h1>
+                <p class="caption">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                  و با لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                  روزنامه و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                  صنعت چاپ، و با
+                </p>
+                <div class="properties">
+                  <div class="property property1">
+                    <span
+                      ><img src="./assets/images/property1.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                  <div class="property property2">
+                    <span
+                      ><img src="./assets/images/property2.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                  <div class="property property3">
+                    <span
+                      ><img src="./assets/images/property3.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="product3"
+                role="tabpanel"
+                aria-labelledby="product3-tab"
+              >
+                <h1 class="title">جعبه 250 برگ</h1>
+                <p class="caption">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                  و با لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                  روزنامه و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                  صنعت چاپ، و با
+                </p>
+                <div class="properties">
+                  <div class="property property1">
+                    <span
+                      ><img src="./assets/images/property1.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                  <div class="property property2">
+                    <span
+                      ><img src="./assets/images/property2.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                  <div class="property property3">
+                    <span
+                      ><img src="./assets/images/property3.png" alt=""
+                    /></span>
+                    <p>۲۵۰ برگ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="col-md-3 desktop">
+                <div class="title">محصولات</div>
+                <ul>
+                  <li><a href="">جعبه</a></li>
+                  <li><a href="">حوله کاغذی</a></li>
+                  <li><a href="">کاغذ توالت</a></li>
+                  <li><a href="">دستمال اقتصادی</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 desktop">
+                <div class="title">دسترسی</div>
+                <ul>
+                  <li><a href="">درباره ما</a></li>
+                  <li><a href="">فعالیت‌های کلین آپ</a></li>
+                  <li><a href="">وبلاگ</a></li>
+                  <li><a href=""> سوالات متداول</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="assets/images/logo-footer.png"
+                  alt=""
+                  class="logo-footer"
+                />
+                <div class="address">
+                  <i class="fa-light fa-location-dot"></i>
+                  <p>
+                    <strong>آدرس:</strong>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.
+                  </p>
+                </div>
+                <div class="connection">
+                  <div class="connectionBox">
+                    <p>Info@Cleanup</p>
+                    <i class="fa-light fa-envelope"></i>
+                  </div>
+                  <div class="connectionBox">
+                    <p>۰۲۱-۳۸۵۷۰۴۹</p>
+                    <i class="fa-light fa-phone"></i>
+                  </div>
+                </div>
+                <div class="socials">
+                  <div class="socialsBox">
+                    <a href="#">
+                      <img src="./assets/images/aparat.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="socialsBox">
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="socialsBox">
+                    <a href="#">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <a
+              href="https://harmony.agency/?utm_source=designbyharmony&amp;utm_medium=badge&amp;utm_campaign=cleanUp-landing"
+              target="_blank"
+            >
+              <span class="hover-company desktop">
+                <img
+                  src="assets/images/harmony-name.png"
+                  loading="lazy"
+                  alt=""
+                />
+              </span>
+              <img
+                class="harmonyLogo desktop"
+                src="assets/images/harmony.png"
+                loading="lazy"
+                alt=""
+              />
+              <span class="hover-company desktop">Design by</span>
+              <img
+                src="assets/images/harmonyLogoMobile.png"
+                alt=""
+                class="mobile harmonyLogo"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Design by Harmony Agency -->
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/harmony.js"></script>
+  </body>
+</html>
