@@ -1,49 +1,3 @@
-//  Slide carousels
-var slideswiper = new Swiper(".slideSwiper", {
-  // autoplay: {
-  //   delay: 6000,
-  //   disableOnInteraction: false,
-  // },
-  navigation: {
-    nextEl: ".slideSwiper .swiper-button-next",
-    prevEl: ".slideSwiper .swiper-button-prev",
-  },
-  pagination: {
-    el: ".slideSwiper .swiper-pagination",
-  },
-});
-
-//  banner carousels
-var bannerSwiper = new Swiper(".bannerSwiper", {
-  // slidesPerView: 1,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 6000,
-  },
-  navigation: {
-    nextEl: ".bannerSwiper .swiper-button-next",
-    prevEl: ".bannerSwiper .swiper-button-prev",
-  },
-  pagination: {
-    el: ".bannerSwiper .swiper-pagination",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 1.5,
-      spaceBetween: 50,
-    },
-  },
-});
-
 // hover for copy right
 $(".copyright a").hover(
   function () {
@@ -67,8 +21,88 @@ jQuery(function ($) {
   });
 });
 
+//  Slide carousels
+var slideswiper = new Swiper(".slideSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  // autoplay: {
+  //   delay: 6000,
+  //   disableOnInteraction: false,
+  // },
+  navigation: {
+    nextEl: ".slideSwiper .swiper-button-next",
+    prevEl: ".slideSwiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".slideSwiper .swiper-pagination",
+  },
+});
+
+//  banner carousels
+var bannerSwiper = new Swiper(".bannerSwiper", {
+  // slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: ".bannerSwiper .swiper-button-next",
+    prevEl: ".bannerSwiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".bannerSwiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 50,
+    },
+  },
+});
+
 //  boxSwiper
 var boxSwiper = new Swiper(".boxSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 20,
+  // centeredSlides: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: "#next",
+    prevEl: "#prev",
+  },
+  pagination: {
+    el: ".boxSwiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+//  toiletPaperSwiper
+var toiletPaperSwiper = new Swiper(".toiletPaperSwiper", {
   slidesPerView: 1.5,
   spaceBetween: 20,
   // centeredSlides: true,
@@ -98,56 +132,29 @@ var boxSwiper = new Swiper(".boxSwiper", {
     },
   },
 });
-//  toiletPaperSwiper
-var toiletPaperSwiper = new Swiper(".toiletPaperSwiper", {
-  // centeredSlides: true,
-  loop: true,
-  // autoplay: {
-  //   delay: 6000,
-  // },
-  navigation: {
-    nextEl: ".toiletPaperSwiper .swiper-button-next",
-    prevEl: ".toiletPaperSwiper .swiper-button-prev",
-  },
-  pagination: {
-    el: ".toiletPaperSwiper .swiper-pagination",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-});
 //  paperTowelSwiper
 var paperTowelSwiper = new Swiper(".paperTowelSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 20,
   // centeredSlides: true,
   loop: true,
   autoplay: {
     delay: 6000,
   },
   navigation: {
-    nextEl: ".paperTowelSwiper .swiper-button-next",
-    prevEl: ".paperTowelSwiper .swiper-button-prev",
+    nextEl: "#next",
+    prevEl: "#prev",
   },
   pagination: {
-    el: ".paperTowelSwiper .swiper-pagination",
+    el: ".boxSwiper .swiper-pagination",
   },
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     1024: {
@@ -158,25 +165,27 @@ var paperTowelSwiper = new Swiper(".paperTowelSwiper", {
 });
 //  economicalSwiper
 var economicalSwiper = new Swiper(".economicalSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 20,
   // centeredSlides: true,
   loop: true,
   autoplay: {
     delay: 6000,
   },
   navigation: {
-    nextEl: ".economicalSwiper .swiper-button-next",
-    prevEl: ".economicalSwiper .swiper-button-prev",
+    nextEl: "#next",
+    prevEl: "#prev",
   },
   pagination: {
-    el: ".economicalSwiper .swiper-pagination",
+    el: ".boxSwiper .swiper-pagination",
   },
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     1024: {
@@ -219,8 +228,46 @@ var categorySwiper = new Swiper(".categorySwiper", {
 });
 
 
-// var boxHover = document.getElementById("#boxHover");
 
-// $(".eventBox").hover(function () {
-//   document.getElementsByClassName("eventBox").innerHTML = boxHover;
+// image product in songle page
+$("#productImg-tab .nav-link").click(function () {
+  let productImgName = $(this).data("content");
+  $("#productImgPlace").attr("src", "assets/images/" + productImgName + ".jpg");
+});
+
+//  testimonialSwiper
+var testimonialSwiper = new Swiper(".testimonialSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 20,
+  centeredSlides: true,
+  // loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: ".testimonialSwiper .swiper-button-next",
+    prevEl: ".testimonialSwiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".testimonialSwiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
+  },
+});
+
+
+// $("#event .content").hover(function () {
+//   $(".boxHover").css('opacity' , '0.7');
 // });
