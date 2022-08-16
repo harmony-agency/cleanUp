@@ -6,7 +6,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import "../css/fontawesome/css/all.min.css";
-@import "../fonts/dana/dana.css";
+@import "../fonts/yekanBakh/yekanBakh.css";
+@import "../fonts/samim/samim.css";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -22253,7 +22254,7 @@ body {
   text-align: right;
   overflow-x: hidden;
   font-style: normal;
-  font-family: dana;
+  font-family: samim;
 }
 
 ul {

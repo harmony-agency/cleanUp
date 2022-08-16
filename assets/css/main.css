@@ -27,8 +27,9 @@ a:hover {
   margin: 0 auto;
   padding: 0 34px;
 }
-.btnCall :hover {
+.btnCall:hover {
   color: #fff;
+  box-shadow: 0px 0px 35px rgba(0, 161, 154, 0.45);
 }
 /*============== header ==================*/
 header {
@@ -83,6 +84,7 @@ header .navbar-brand {
   font-size: 68px;
   font-weight: 700;
   margin-bottom: 50px;
+  font-family: yekanBakh;
 }
 #slide p {
   font-weight: 400;
@@ -90,11 +92,12 @@ header .navbar-brand {
   text-align: right;
   text-align-last: right;
   margin-bottom: 50px;
+  max-width: 80%;
 }
 #slide .picture {
   position: absolute;
-  left: -50px;
-  bottom: 95px;
+  left: 60px;
+  bottom: 98px;
   max-width: 50%;
 }
 #slide .swiper-wrapper {
@@ -130,6 +133,9 @@ header .navbar-brand {
   margin-right: 0;
   background-color: #fff;
   color: #00a19a;
+}
+#slide .btnCall:hover {
+  box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
 }
 /*============== Product ==================*/
 #product {
@@ -455,7 +461,7 @@ header .navbar-brand {
   z-index: 999;
 }
 #event .boxHover img {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 #event .boxHover p {
   font-weight: 600;
@@ -464,6 +470,12 @@ header .navbar-brand {
   text-align: center;
   text-align-last: center;
   margin-bottom: 30px;
+  position: unset;
+}
+#event .boxHover .socialsBox i {
+  position: unset;
+  color: #00a19a;
+  font-size: 38px;
 }
 #event .content:hover .boxHover {
   opacity: 1;

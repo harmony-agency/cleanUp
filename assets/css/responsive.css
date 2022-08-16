@@ -53,6 +53,7 @@
     font-size: 12px;
     text-align: right;
     margin-bottom: 37px;
+    max-width: 100%;
   }
   #slide .content {
     width: 100%;
@@ -108,7 +109,11 @@
   /*================================ product ================================*/
   #product {
     padding-bottom: 100px;
-    background: linear-gradient( 0deg, rgb(57 195 187 / 6%) 60.29%, rgba(57, 195, 187, 0) 97.67% );
+    background: linear-gradient(
+      0deg,
+      rgb(57 195 187 / 6%) 60.29%,
+      rgba(57, 195, 187, 0) 97.67%
+    );
   }
   #product .container {
     padding: 0 14px 0 0;
@@ -154,7 +159,6 @@
   }
   .bottomCloud {
     max-width: 40%;
-   
   }
   /*================================ sectionCombine ================================*/
 
@@ -326,6 +330,9 @@
   footer .address {
     margin-bottom: 20px;
     align-items: flex-start;
+  }
+  footer .address i {
+    margin-left: 3px;
   }
 
   /* box */

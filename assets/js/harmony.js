@@ -43,6 +43,7 @@ var slideswiper = new Swiper(".slideSwiper", {
 var bannerSwiper = new Swiper(".bannerSwiper", {
   // slidesPerView: 1,
   centeredSlides: true,
+  
   loop: true,
   // autoplay: {
   //   delay: 6000,
