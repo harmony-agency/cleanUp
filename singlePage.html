@@ -13,14 +13,12 @@
     <link rel="stylesheet" href="assets/css/aos.css" />
     <style>
       body {
-        background-image: url(./assets/images/categoryBg.png),
-          linear-gradient(
-            1.88deg,
-            #90ccca -22.4%,
-            rgba(238, 246, 246, 0.27) 98.41%
-          ); /* W3C */
+        background-image: url(./assets/images/singlePageBg.png);
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      footer {
+        margin-top: -50px;
       }
     </style>
   </head>
@@ -60,8 +58,32 @@
       <section id="singleProduct">
         <div class="container">
           <div class="productImg">
-            <div class="productImgBox">
-              <img src="./assets/images/product1.jpg" id="productImgPlace" />
+            <div class="tab-content" id="productImg-tabContent">
+              <div
+                class="tab-pane fade active show"
+                id="product1"
+                class="content"
+                role="tabpanel"
+                aria-labelledby="product1-tab"
+              >
+                <img src="./assets/images/product1.jpg" alt="" />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="product2"
+                role="tabpanel"
+                aria-labelledby="product2-tab"
+              >
+                <img src="./assets/images/product2.jpg" alt="" />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="product3"
+                role="tabpanel"
+                aria-labelledby="product3-tab"
+              >
+                <img src="./assets/images/product3.jpg" alt="" />
+              </div>
             </div>
             <ul class="nav nav-pills" id="productImg-tab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -112,123 +134,33 @@
             </ul>
           </div>
           <div class="productContent">
-            <div class="tab-content" id="productImg-tabContent">
-              <div
-                class="tab-pane fade active show"
-                id="product1"
-                class="content"
-                role="tabpanel"
-                aria-labelledby="product1-tab"
-              >
-                <h1 class="title">جعبه 250 برگ</h1>
-                <p class="caption">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                  و با لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                  روزنامه و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                  صنعت چاپ، و با
-                </p>
-                <div class="properties">
-                  <div class="property property1">
-                    <span
-                      ><img src="./assets/images/property1.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                  <div class="property property2">
-                    <span
-                      ><img src="./assets/images/property2.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                  <div class="property property3">
-                    <span
-                      ><img src="./assets/images/property3.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                </div>
-                <a href="#" class="commentBtn">ثبت نظر</a>
+            <div class="top">
+              <h1 class="title">جعبه 250 برگ</h1>
+              <img src="./assets/images/stars.png" alt="" />
+            </div>
+            <p class="caption">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+              ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+              ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            </p>
+            <div class="properties">
+              <div class="property property1">
+                <span><img src="./assets/images/property1.png" alt="" /></span>
+                <p>۲۵۰ برگ</p>
               </div>
-              <div
-                class="tab-pane fade"
-                id="product2"
-                role="tabpanel"
-                aria-labelledby="product2-tab"
-              >
-                <h1 class="title">جعبه 250 برگ</h1>
-                <p class="caption">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                  و با لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                  روزنامه و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                  صنعت چاپ، و با
-                </p>
-                <div class="properties">
-                  <div class="property property1">
-                    <span
-                      ><img src="./assets/images/property1.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                  <div class="property property2">
-                    <span
-                      ><img src="./assets/images/property2.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                  <div class="property property3">
-                    <span
-                      ><img src="./assets/images/property3.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                </div>
-                <a href="#" class="commentBtn">ثبت نظر</a>
+              <div class="property property2">
+                <span><img src="./assets/images/property2.png" alt="" /></span>
+                <p>۲۵۰ برگ</p>
               </div>
-              <div
-                class="tab-pane fade"
-                id="product3"
-                role="tabpanel"
-                aria-labelledby="product3-tab"
-              >
-                <h1 class="title">جعبه 250 برگ</h1>
-                <p class="caption">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                  و با لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                  روزنامه و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                  صنعت چاپ، و با
-                </p>
-                <div class="properties">
-                  <div class="property property1">
-                    <span
-                      ><img src="./assets/images/property1.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                  <div class="property property2">
-                    <span
-                      ><img src="./assets/images/property2.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                  <div class="property property3">
-                    <span
-                      ><img src="./assets/images/property3.png" alt=""
-                    /></span>
-                    <p>۲۵۰ برگ</p>
-                  </div>
-                </div>
-                <a href="#" class="commentBtn">ثبت نظر</a>
+              <div class="property property3">
+                <span><img src="./assets/images/property3.png" alt="" /></span>
+                <p>۲۵۰ برگ</p>
               </div>
             </div>
+            <a href="#" class="commentBtn">ثبت نظر</a>
           </div>
         </div>
       </section>
@@ -238,7 +170,10 @@
         <div class="swiper testimonialSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+              <div class="top">
+                <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+                <img src="./assets/images/stars.png" alt="" />
+              </div>
               <p class="caption">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
@@ -249,7 +184,10 @@
               <p class="date">۱۲.۱۲.۱۴۰۱</p>
             </div>
             <div class="swiper-slide">
-              <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+              <div class="top">
+                <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+                <img src="./assets/images/stars.png" alt="" />
+              </div>
               <p class="caption">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
@@ -260,7 +198,10 @@
               <p class="date">۱۲.۱۲.۱۴۰۱</p>
             </div>
             <div class="swiper-slide">
-              <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+              <div class="top">
+                <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+                <img src="./assets/images/stars.png" alt="" />
+              </div>
               <p class="caption">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
@@ -271,7 +212,10 @@
               <p class="date">۱۲.۱۲.۱۴۰۱</p>
             </div>
             <div class="swiper-slide">
-              <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+              <div class="top">
+                <h2 class="title">جعبه 250 برگ/ رنگ صورتی گلدار</h2>
+                <img src="./assets/images/stars.png" alt="" />
+              </div>
               <p class="caption">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
@@ -282,8 +226,12 @@
               <p class="date">۱۲.۱۲.۱۴۰۱</p>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next">
+            <img src="./assets/images/prev.png" alt="" />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./assets/images/next.png" alt="" />
+          </div>
           <div class="swiper-pagination"></div>
         </div>
       </section>

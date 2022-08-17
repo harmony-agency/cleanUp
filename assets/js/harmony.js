@@ -41,7 +41,8 @@ var slideswiper = new Swiper(".slideSwiper", {
 
 //  banner carousels
 var bannerSwiper = new Swiper(".bannerSwiper", {
-  // slidesPerView: 1,
+  slidesPerView: 1.2,
+  spaceBetween: 5,
   centeredSlides: true,
   
   loop: true,
@@ -57,8 +58,8 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 1.5,
+      spaceBetween: 5,
     },
     768: {
       slidesPerView: 2,
@@ -199,7 +200,7 @@ var economicalSwiper = new Swiper(".economicalSwiper", {
 //  categorySwiper
 var categorySwiper = new Swiper(".categorySwiper", {
   slidesPerView: 1.5,
-  spaceBetween: 20,
+  spaceBetween: 30,
   // centeredSlides: true,
   // loop: true,
   // autoplay: {
@@ -215,7 +216,7 @@ var categorySwiper = new Swiper(".categorySwiper", {
   breakpoints: {
     640: {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 30,
     },
     768: {
       slidesPerView: 3,
@@ -241,7 +242,7 @@ var testimonialSwiper = new Swiper(".testimonialSwiper", {
   slidesPerView: 1.5,
   spaceBetween: 20,
   centeredSlides: true,
-  // loop: true,
+  loop: true,
   // autoplay: {
   //   delay: 6000,
   // },
@@ -254,7 +255,7 @@ var testimonialSwiper = new Swiper(".testimonialSwiper", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     768: {
