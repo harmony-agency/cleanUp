@@ -40,6 +40,9 @@
     max-width: 90px;
   }
   /*================================ slide ================================*/
+  #slide {
+    background: rgba(57, 195, 187, 0.069) 97.29%;
+  }
   #slide .swiper-wrapper {
     max-height: 550px;
   }
@@ -60,10 +63,10 @@
   }
   #slide .container {
     position: unset;
-    padding-top: 0;
+    padding: 0 15px;
   }
   #slide .slideSwiper {
-    padding-bottom: 30px;
+    padding-bottom: 45px;
   }
   #slide .swiper-slide {
     display: flex;
@@ -83,7 +86,7 @@
     left: 0;
     top: unset;
     right: 0;
-    bottom: -8%;
+    bottom: -6%;
     max-width: 80%;
     z-index: 1000;
     margin: 0 auto;
@@ -104,6 +107,8 @@
     background: #ffffff;
     color: #00a19a;
     margin-right: 0;
+    font-weight: 700;
+    font-size: 12px;
   }
 
   /*================================ product ================================*/
@@ -111,9 +116,25 @@
     padding-bottom: 100px;
     background: linear-gradient(
       0deg,
-      rgb(57 195 187 / 6%) 60.29%,
-      rgba(57, 195, 187, 0) 97.67%
+      rgba(57, 195, 187, 0.069) 97.29%,
+      rgba(57, 195, 187, 0.067) 97.67%
     );
+    position: relative;
+  }
+  #product .section-title {
+    position: relative;
+  }
+  #product .productCloudTop {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    max-width: 20%;
+  }
+  #product .productCloudBottom {
+    position: absolute;
+    bottom: 17%;
+    right: 0px;
+    max-width: 20%;
   }
   #product .container {
     padding: 0 14px 0 0;
@@ -159,6 +180,7 @@
   }
   .bottomCloud {
     max-width: 40%;
+    left: -15%;
   }
   /*================================ sectionCombine ================================*/
 
@@ -227,6 +249,9 @@
   }
 
   /*================================ event ================================*/
+  #event {
+    padding-bottom: 40px;
+  }
   #event .row {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -270,12 +295,13 @@
   }
   /*================================ about ================================*/
   #about {
-    margin: 60px auto;
+    margin: 0 auto;
+    padding: 60px 0 90px;
   }
   #about h1 {
     font-weight: 700;
     font-size: 21px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   #about p {
     font-weight: 400;
@@ -328,6 +354,8 @@
   }
   footer .socials {
     justify-content: space-evenly;
+    max-width: 70%;
+    margin: 0 auto;
   }
   footer .content {
     padding: 0 15px 44px;
@@ -338,6 +366,7 @@
   footer .address {
     margin-bottom: 20px;
     align-items: flex-start;
+    justify-content: center;
   }
   footer .address i {
     margin-left: 3px;
@@ -348,10 +377,18 @@
   }
 
   /* box */
+  #product .swiper-slide-active .box {
+    box-shadow: none;
+  }
   .box {
     padding: 0;
     width: 250px;
     height: 313px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.0509804);
+  }
+
+  .box .imgBox {
+    padding: 0 20px;
   }
   .box .card-footer {
     padding: 27px 13px;
@@ -372,7 +409,7 @@
   }
   #categoryBanner .content {
     border-radius: 0px 0px 0px 80px;
-    padding: 120px 15px 32px;
+    padding: 120px 17px 32px;
     position: relative;
   }
   #categoryBanner .content .categoryImg {
@@ -493,7 +530,7 @@
   }
   #singleProduct #productImg-tabContent {
     width: 100%;
-    min-height: 150px;
+    min-height: 175px;
   }
   #singleProduct .productContent {
     width: 100%;
@@ -568,6 +605,7 @@
   }
   .testimonialSwiper .top img {
     max-width: 30%;
+    margin-top: 5px;
   }
   .testimonialSwiper .swiper-slide .caption {
     font-size: 14px;
