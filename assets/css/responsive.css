@@ -1,5 +1,5 @@
-/*============== mobile abd tablet ==================*/
-@media screen and (max-width: 768px) {
+/*============== mobile ==================*/
+@media screen and (max-width: 767px) {
   .btnCall {
     height: 36px;
     margin: 0 auto;
@@ -114,6 +114,7 @@
   /*================================ product ================================*/
   #product {
     padding-bottom: 100px;
+    padding-top: 70px;
     background: linear-gradient(
       0deg,
       rgba(57, 195, 187, 0.069) 97.29%,
@@ -375,7 +376,70 @@
     font-weight: 400;
     font-size: 12px;
   }
+  footer .logo-footer {
+    margin-bottom: 30px;
+  }
+  footer .productFooter {
+    margin-bottom: 30px;
+  }
+  footer .accordion-item {
+    background: transparent;
+    box-shadow: none;
+    border-top: 1px solid rgba(88, 213, 205, 0.3);
+    border-bottom: 1px solid rgba(88, 213, 205, 0.3);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
 
+  footer .accordion-body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  footer .accordion-header {
+    margin: 0;
+  }
+  footer .accordion-button {
+    background: transparent !important;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 25px 0 25px 0;
+    justify-content: space-between;
+    border-radius: 0;
+  }
+  footer .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  footer .accordion-button::after {
+    margin-left: 0;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    filter: brightness(0) invert(1);
+
+    transform: scale(0.4) !important;
+  }
+  footer .accordion-button:not(.collapsed) {
+    color: #fff;
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    filter: brightness(0) invert(1);
+  }
+
+  footer ul {
+    padding: 0 40px 0 0;
+  }
+  footer ul li {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    text-align-last: right;
+    margin-bottom: 16px;
+  }
   /* box */
   #product .swiper-slide-active .box {
     box-shadow: none;
@@ -618,5 +682,118 @@
   }
   .testimonialSwiper .swiper-slide .date {
     font-size: 14px;
+  }
+}
+
+/*============== tablet ==================*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mobileNav {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
+  .btnCall {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  header .navbar .navItems a {
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  #slide h1 {
+    font-weight: 700;
+    font-size: 48px;
+  }
+  #slide p {
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 70%;
+  }
+  #slide .btnCall {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  #slide .picture {
+    max-width: 50%;
+    bottom: -10%;
+  }
+  #slide .swiper-wrapper {
+    max-height: 600px;
+  }
+  #slide .swiper-pagination {
+    display: none;
+  }
+  #slide .slider1 .slider1CloudLeft {
+    display: block;
+    top: 2%;
+  }
+  .box {
+    width: 244px;
+    height: 313px;
+  }
+  .box .card-footer .category {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .box .card-footer .seeAll {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  #banner .swiper-button-next,
+  #banner .swiper-button-prev {
+    display: none;
+  }
+  #banner .swiper-horizontal > .swiper-pagination-bullets,
+  #banner .swiper-pagination-bullets.swiper-pagination-horizontal,
+  #banner .swiper-pagination-custom,
+  #banner .swiper-pagination-fraction {
+    left: 0;
+  }
+  #product .nav-pills {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+  }
+  #product {
+    padding-top: 70px;
+  }
+  #product .nav-pills .nav-link .box-cat {
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .productCloudTop,
+  .productCloudBottom {
+    display: none;
+  }
+  .topCloud {
+    position: absolute;
+    top: -10%;
+    left: 6%;
+    max-width: 40%;
+  }
+  footer .col-md-3 {
+    display: block;
+  }
+  #about .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #event .eventBox2 .logoPost {
+    max-width: 50%;
+  }
+  #event .eventBox2 p {
+    bottom: 30px;
+  }
+  #event .eventBox2 .logoPost {
+    top: 20px;
+  }
+  .productFooter {
+    display: none;
   }
 }
