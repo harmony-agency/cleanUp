@@ -511,13 +511,13 @@
   }
   #main .swiper-wrapper {
     z-index: 90;
-    padding: 0 15px;
+    padding: 10px 15px 40px;
   }
   #main .categorySwiper {
     margin-bottom: 0;
   }
   #main .categories {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
   .intro {
     display: flex;
@@ -683,6 +683,206 @@
   .testimonialSwiper .swiper-slide .date {
     font-size: 14px;
   }
+  /* aboutUs styles */
+  #starter {
+    padding: 131px 0 0;
+  }
+  #starter .shakeCloud {
+    max-width: 30%;
+    top: -32%;
+  }
+  #starter .container {
+    padding-right: 0;
+  }
+  #starter .content {
+    border-radius: 0 0 0 80px;
+    padding: 15px;
+    min-height: 356px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 45px;
+  }
+  #starter .content .cloudInnerTop {
+    top: 20%;
+    right: 23%;
+    max-width: 10%;
+  }
+  #starter .content .cloudInnerBottom {
+    right: 42%;
+  }
+  #starter .aboutUsImg {
+    max-width: 65%;
+    top: -20%;
+  }
+  #starter .cloudLeftSingle {
+    position: absolute;
+    left: -18%;
+    bottom: 9%;
+    max-width: 40%;
+    animation: moveCloud 10s ease 0s infinite normal forwards;
+  }
+  #starter .content .title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 32px;
+  }
+  #starter .content .aboutUsTitle {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  #starter .content .aboutUsCaption {
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 70%;
+    line-height: 2;
+  }
+  /* properies */
+  #properies {
+    padding: 130px 0 0;
+  }
+  #properies .content {
+    flex-direction: column;
+  }
+  #properies .content .col-md-4 {
+    padding: 0 16px;
+  }
+  #properies .property {
+    padding: 90px 30px 35px;
+    margin-bottom: 74px;
+  }
+  #properies .property h2 {
+    font-weight: 700;
+    font-size: 21px;
+    margin: 0 auto 30px;
+  }
+  #properies .property p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  #properies .property:nth-child(1) p {
+    text-align: center;
+  }
+  #properies .propertyImg {
+    width: 93px;
+    height: 93px;
+    padding: 20px;
+  }
+  /* #aboutCleanup */
+  #aboutCleanup {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  #aboutCleanup .content {
+    flex-direction: column;
+  }
+  #aboutCleanup .content > div {
+    width: 100%;
+  }
+  #aboutCleanup .content .caption {
+    padding: 0;
+    order: 1;
+  }
+  #aboutCleanup .content .caption .section-title {
+    margin-bottom: 24px;
+  }
+  #aboutCleanup .content .caption p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  #aboutCleanup .content .aboutPicture {
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #aboutCleanup .content .caption .zarrinLogo {
+    margin: 0;
+  }
+  #aboutCleanup .content .caption img {
+    margin: 0;
+    max-width: 20%;
+  }
+  /* #group-social */
+  #group-social {
+    padding: 40px 0;
+    background: linear-gradient(2.04deg, #eaf4f4 0.1%, #ffffff 156.71%);
+  }
+  #productGroup {
+    margin-bottom: 80px;
+  }
+  #productGroup .section-title {
+    margin-bottom: 40px;
+  }
+  #productGroup .groupBox {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+  }
+  #productGroup .groupBox .col-md-3 {
+    max-width: 80%;
+  }
+  #productGroup .groupBox .group:hover {
+    box-shadow: 0px 3px 7px rgb(0 161 154 / 15%);
+  }
+  #productGroup .groupBox .group .name {
+    font-weight: 900;
+    font-size: 21px;
+  }
+  #productGroup .groupBox .group .description {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  #productGroup .groupBox .group .seeAllProducts {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  /*  #socialResponsibility */
+  #socialResponsibility {
+    padding-bottom: 35px;
+  }
+  #socialResponsibility .content {
+    flex-direction: column;
+  }
+  #socialResponsibility .content > div {
+    width: 100%;
+  }
+  #socialResponsibility .content .socialPictue,
+  #socialResponsibility .content .socialCaption {
+    padding: 0;
+  }
+  #socialResponsibility .content .socialPictue {
+    order: 1;
+    margin: 40px 0 20px;
+
+  }
+  #socialResponsibility .content .socialCaption .section-title {
+    margin-bottom: 24px;
+  }
+  #socialResponsibility .content .socialCaption p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 42px;
+  }
+  #socialResponsibility .content .socialCaption .call {
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .box {
+    padding: 0;
+    width: 220px;
+    height: 290px;
+    box-shadow: 0px 3px 7px rgb(0 0 0 / 5%);
+  }
 }
 
 /*============== tablet ==================*/
@@ -797,3 +997,26 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  #starter .cloudRight {
+    position: absolute;
+    max-width: 10%;
+    right: 22%;
+    top: 6%;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .productContent .property {
+    margin-left: 30px;
+  }
+  .testimonialSwiper .swiper-button-next {
+    right: 24%;
+  }
+  .box {
+    width: 220px;
+    height: 313px;
+  }
+}
+

@@ -18,7 +18,12 @@
         background-size: cover;
       }
       footer {
-        margin-top: -50px;
+        margin-top: -60px;
+      }
+      @media screen and (max-width: 767px) {
+        body {
+          background-image: url(./assets/images/bodyMobile.png);
+        }
       }
     </style>
   </head>
@@ -59,12 +64,17 @@
         <img
           src="./assets/images/cloudAboutLeft.png"
           alt=""
-          class="cloudAboutLeft"
+          class="cloudAboutLeft desktop"
         />
-        <img src="./assets/images/cloud.png" alt="" class="cloudRight" />
+        <img
+          src="./assets/images/cloud.png"
+          alt=""
+          class="cloudRight desktop"
+        />
         <img src="./assets/images/cloud.png" alt="" class="cloudRightHalf" />
         <div class="container">
           <div class="content">
+            <img src="./assets/images/cloud.png" alt="" class="cloudInnerTop" />
             <div class="row">
               <div class="col-md-6">
                 <p class="title">درباره ما</p>
@@ -73,18 +83,26 @@
                   افزودن جرقه ای از حس خوب به لحظه های زندگی
                 </p>
               </div>
-              <div class="col-md-6">
-                <img
-                  src="assets/images/aboutUsStarter.png"
-                  alt=""
-                  class="aboutUsImg"
-                />
-              </div>
+              <img
+              src="./assets/images/solidCloud.png"
+              alt=""
+              class="shakeCloud"
+            />
+              <img
+                src="assets/images/aboutUsStarter.png"
+                alt=""
+                class="aboutUsImg"
+              />
             </div>
+            <img
+              src="./assets/images/solidCloud.png"
+              alt=""
+              class="cloudLeftSingle"
+            />
             <img
               src="./assets/images/cloud.png"
               alt=""
-              class="cloudLeftSingle"
+              class="cloudInnerBottom"
             />
           </div>
         </div>
@@ -93,7 +111,7 @@
       <section id="properies">
         <div class="container">
           <div class="content row">
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12">
               <div class="property">
                 <div class="propertyImg">
                   <img src="./assets/images/propertyMission.png" alt="" />
@@ -106,7 +124,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12">
               <div class="property">
                 <div class="propertyImg">
                   <img src="./assets/images/propertyVision.png" alt="" />
@@ -115,7 +133,7 @@
                 <p>افزودن جرقه ای از حس خوب به لحظه های زندگی</p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12">
               <div class="property">
                 <div class="propertyImg">
                   <img src="./assets/images/propertyTarget.png" alt="" />
@@ -132,8 +150,131 @@
         </div>
       </section>
 
-      <section id="about">
-        <div class="container"></div>
+      <section id="aboutCleanup">
+        <div class="container">
+          <div class="content">
+            <div class="caption">
+              <h2 class="section-title">درباره کلین آپ</h2>
+              <p>
+                کلین آپ در گروه محصولات تیشو؛ در مرداد 1401 بدنیا آمد. این برند
+                که یکی از برندهای شرکت زرین رویاست، در راستای کامل کردن سبد
+                محصولات این گروه و با پشتوانه چندین دهه تولید محصولات سلولزی
+                شرکت زرین رویا پا به عرصه وجود نهاد. گروه زرین از سال ۱۳۶۸ کار
+                خود را در حوزه‌ی تولید ظروف پلاستیکی تغذیه کودکان و دیگر ملزومات
+                بهداشتی و پلاستیکی آغاز کرد و در سال ۱۳۷۹ با تولید پوشک بچه
+                «مای‌بیبی» فعالیت خود را در صنایع سلولزی گسترش داد. با توجه به
+                نیازهای مختلف و متعدد خانواده‌های ایرانی، برند «مای‌لیدی» با
+                ارائه‌ی پدهای بهداشتی بانوان در سال ۱۳۸۰ و برند «ایزی‌لایف» با
+                تولید پوشینه‌ی بزرگسال در سال ۱۳۸۸ سبد محصولات گروه زرین را کامل
+                کردند.
+              </p>
+              <div class="logos">
+                <img
+                  src="./assets/images/zarrinLogo.png"
+                  alt=""
+                  class="zarrinLogo"
+                />
+                <img
+                  src="./assets/images/logoText.png"
+                  alt=""
+                  class="cleanupLogo"
+                />
+              </div>
+            </div>
+            <div class="aboutPicture">
+              <img src="./assets/images/aboutCleanupImg.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="group-social">
+        <div class="container">
+          <div id="productGroup">
+            <h2 class="section-title">گروه محصولات کلین آپ</h2>
+            <div class="content">
+              <div class="groupBox row">
+                <div class="col-md-3">
+                  <div class="group">
+                    <div class="imgBox">
+                      <img src="./assets/images/economicGroup.png" alt="" />
+                    </div>
+
+                    <h3 class="name">دستمال اقتصادی</h3>
+                    <p class="description">
+                      در دو طرح ابر و قاصدک
+                      <br />
+                      با رنگبندی متفاوت
+                    </p>
+                    <a href="" class="btn btnCall"> همه محصولات </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="group">
+                    <div class="imgBox">
+                      <img src="./assets/images/toiletGroup.png" alt="" />
+                    </div>
+                    <h3 class="name">کاغذ توالت</h3>
+                    <p class="description">
+                      لورم ایپسوم
+                      <br />
+                      متن ساختگی
+                    </p>
+                    <a href="" class="btn btnCall"> همه محصولات </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="group">
+                    <div class="imgBox">
+                      <img src="./assets/images/boxGroup.png" alt="" />
+                    </div>
+                    <h3 class="name">جعبه‌</h3>
+                    <p class="description">
+                      در چهار کالکشن و
+                      <br />
+                      دوازده طرح متفاوت
+                    </p>
+                    <a href="" class="btn btnCall"> همه محصولات </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="group">
+                    <div class="imgBox">
+                      <img src="./assets/images/towelGroup.png" alt="" />
+                    </div>
+                    <h3 class="name">حوله کاغذی</h3>
+                    <p class="description">
+                      لورم ایپسوم
+                      <br />
+                      متن ساختگی
+                    </p>
+                    <a href="" class="btn btnCall"> همه محصولات </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="socialResponsibility">
+            <div class="content">
+              <div class="socialPictue">
+                <img src="./assets/images/socialImg.png" alt="" />
+              </div>
+              <div class="socialCaption">
+                <h2 class="section-title">مسئولیت اجتماعی</h2>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                  و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                  و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                  چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                  روزنامه و
+                </p>
+                <a href="" class="btn btnCall">کال تو اکشن </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- footer -->

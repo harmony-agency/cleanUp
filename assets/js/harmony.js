@@ -26,10 +26,10 @@ var slideswiper = new Swiper(".slideSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
 
-  // autoplay: {
-  //   delay: 6000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".slideSwiper .swiper-button-next",
     prevEl: ".slideSwiper .swiper-button-prev",
@@ -44,11 +44,11 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
   slidesPerView: 1.2,
   spaceBetween: 5,
   centeredSlides: true,
-  
+
   loop: true,
-  // autoplay: {
-  //   delay: 6000,
-  // },
+  autoplay: {
+    delay: 6000,
+  },
   navigation: {
     nextEl: ".bannerSwiper .swiper-button-next",
     prevEl: ".bannerSwiper .swiper-button-prev",
@@ -78,9 +78,9 @@ var boxSwiper = new Swiper(".boxSwiper", {
   spaceBetween: 20,
   // centeredSlides: true,
   loop: true,
-  // autoplay: {
-  //   delay: 6000,
-  // },
+  autoplay: {
+    delay: 6000,
+  },
   navigation: {
     nextEl: "#next",
     prevEl: "#prev",
@@ -203,9 +203,9 @@ var categorySwiper = new Swiper(".categorySwiper", {
   spaceBetween: 30,
   // centeredSlides: true,
   // loop: true,
-  // autoplay: {
-  //   delay: 6000,
-  // },
+  autoplay: {
+    delay: 6000,
+  },
   navigation: {
     nextEl: "#next",
     prevEl: "#prev",
@@ -229,8 +229,6 @@ var categorySwiper = new Swiper(".categorySwiper", {
   },
 });
 
-
-
 // image product in songle page
 $("#productImg-tab .nav-link").click(function () {
   let productImgName = $(this).data("content");
@@ -243,9 +241,9 @@ var testimonialSwiper = new Swiper(".testimonialSwiper", {
   spaceBetween: 20,
   centeredSlides: true,
   loop: true,
-  // autoplay: {
-  //   delay: 6000,
-  // },
+  autoplay: {
+    delay: 6000,
+  },
   navigation: {
     nextEl: ".testimonialSwiper .swiper-button-next",
     prevEl: ".testimonialSwiper .swiper-button-prev",
@@ -269,7 +267,3 @@ var testimonialSwiper = new Swiper(".testimonialSwiper", {
   },
 });
 
-
-// $("#event .content").hover(function () {
-//   $(".boxHover").css('opacity' , '0.7');
-// });
