@@ -497,6 +497,7 @@
   /* main */
   #main {
     padding-top: 80px;
+    margin-bottom: 60px;
   }
   #main .container {
     padding: 0;
@@ -505,19 +506,19 @@
     font-size: 21px;
     margin-bottom: 40px;
   }
-  #main .categorySwiper {
-    flex-direction: column;
-    padding: 0;
-  }
+
   #main .swiper-wrapper {
     z-index: 90;
     padding: 10px 15px 40px;
   }
-  #main .categorySwiper {
+  #main .swiper {
     margin-bottom: 0;
+    padding: 0;
+
   }
   #main .categories {
     margin-bottom: 0;
+    display: block;
   }
   .intro {
     display: flex;
@@ -539,8 +540,8 @@
     font-size: 14px;
     margin-bottom: 0;
   }
-  #main .categorySwiper .swiper-button-next,
-  #main .categorySwiper .swiper-button-prev {
+  #main .categories .swiper-button-next,
+  #main .categories .swiper-button-prev {
     display: none;
   }
   .intro {

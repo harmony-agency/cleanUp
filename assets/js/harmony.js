@@ -200,12 +200,11 @@ var economicalSwiper = new Swiper(".economicalSwiper", {
 //  categorySwiper
 var categorySwiper = new Swiper(".categorySwiper", {
   slidesPerView: 1.5,
-  spaceBetween: 30,
-  // centeredSlides: true,
-  // loop: true,
-  autoplay: {
-    delay: 6000,
-  },
+  spaceBetween: 20,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
   navigation: {
     nextEl: "#next",
     prevEl: "#prev",
@@ -215,15 +214,78 @@ var categorySwiper = new Swiper(".categorySwiper", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 3,
+      slidesPerView: 1.5,
       spaceBetween: 30,
+      centeredSlides: true,
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
+//  category2Swiper
+var category2Swiper = new Swiper(".category2Swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 20,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: "#next",
+    prevEl: "#prev",
+  },
+  pagination: {
+    el: ".category2Swiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      centeredSlides: true,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
+//  category3Swiper
+var category3Swiper = new Swiper(".category3Swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 20,
+  loop: true,
+  // autoplay: {
+  //   delay: 6000,
+  // },
+  navigation: {
+    nextEl: "#next",
+    prevEl: "#prev",
+  },
+  pagination: {
+    el: ".category3Swiper .swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      centeredSlides: true,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   },
@@ -266,4 +328,3 @@ var testimonialSwiper = new Swiper(".testimonialSwiper", {
     },
   },
 });
-

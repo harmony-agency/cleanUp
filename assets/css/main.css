@@ -730,7 +730,8 @@ footer .harmonyLogo:hover {
 
 /* main */
 #main {
-  padding-top: 0;
+  padding: 0;
+  margin-bottom: 87px;
 }
 #main .container {
   max-width: 1320px;
@@ -793,11 +794,11 @@ footer .harmonyLogo:hover {
   padding: 10px 25px;
   position: relative;
 }
-#main .swiper-rtl .swiper-button-next {
+#main .swiper-button-next {
   right: 65px;
   top: 30px;
 }
-#main .swiper-rtl .swiper-button-prev {
+#main .swiper-button-prev {
   right: 20px;
   top: 30px;
 }
@@ -832,6 +833,7 @@ footer .harmonyLogo:hover {
 #main .categories {
   display: flex;
   align-items: center;
+  
 }
 
 /* =========================================== singleProduct styles =========================================== */
@@ -973,16 +975,16 @@ footer .harmonyLogo:hover {
   box-shadow: 0px 0px 35px rgba(0, 161, 154, 0.45);
 }
 
-#main .categorySwiper {
+#main .swiper {
   display: flex;
-  padding: 30px 30px 40px 0;
-  margin-bottom: 50px;
+  padding: 50px 30px 50px 0;
+  margin-bottom: 0;
 }
-#main .categorySwiper .swiper-pagination {
+#main .categories .swiper-pagination {
   display: none;
 }
-#main .categorySwiper .swiper-button-next,
-#main .categorySwiper .swiper-button-prev {
+#main .categories .swiper-button-next,
+#main .categories .swiper-button-prev {
   background: #83f1ec6e;
   width: 35px;
   height: 35px;
@@ -990,8 +992,8 @@ footer .harmonyLogo:hover {
   padding: 10px;
 }
 
-#main .categorySwiper .swiper-button-next::after,
-#main .categorySwiper .swiper-button-prev::after {
+#main .categories .swiper-button-next::after,
+#main .categories .swiper-button-prev::after {
   color: #fff;
   font-size: 20px;
   content: "";
