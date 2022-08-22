@@ -18,12 +18,13 @@
         background-size: cover;
         background-position: revert;
       }
-      footer {
-        margin-top: -60px;
-      }
+
       @media screen and (max-width: 767px) {
         body {
           background-image: url(./assets/images/bodyMobile.png);
+        }
+        footer {
+          margin-top: -60px;
         }
       }
     </style>
@@ -62,9 +63,18 @@
       </header>
 
       <section id="contactus">
+        <img
+          src="./assets/images/contactCloudRight.png"
+          alt=""
+          class="contactCloudRight desktop"
+        />
         <div class="container">
           <div class="content row">
-              <img src="./assets/images/solidCloud.png" alt="" class="topFormCloud">
+            <img
+              src="./assets/images/solidCloud.png"
+              alt=""
+              class="topFormCloud"
+            />
             <div class="col-md-6 col-sm-12">
               <h2 class="title">تماس با ما</h2>
               <div class="caption">
@@ -93,19 +103,26 @@
                   <a href="tel:۰۹۰۱۸۹۶۷۲۸۵">۰۹۰۱۸۹۶۷۲۸۵ </a>
                 </div>
               </div>
-              <img src="./assets/images/map.png" alt="" class="map" />
-              <div class="icons">
-                <a href="#">
-                  <img src="./assets/images/aparat.png" alt="" />
-                  <i class="fab fa-instagram instagramIcon"></i>
-                </a>
+              <div class="mapBox">
+                <img src="./assets/images/map.png" alt="" class="map" />
+                <div class="icons">
+                  <a href="#">
+                    <img src="./assets/images/aparat.png" alt="" />
+                    <i class="fab fa-instagram instagramIcon"></i>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <img src="./assets/images/form.png" alt="">
+            <div class="col-md-6 col-sm-12 formPart">
+              <div class="formBox">
+                <img src="./assets/images/form.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <section id="empty" class="mobile">
+
       </section>
 
       <!-- footer -->

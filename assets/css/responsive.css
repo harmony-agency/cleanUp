@@ -858,7 +858,6 @@
   #socialResponsibility .content .socialPictue {
     order: 1;
     margin: 40px 0 20px;
-
   }
   #socialResponsibility .content .socialCaption .section-title {
     margin-bottom: 24px;
@@ -873,6 +872,58 @@
     font-size: 14px;
     border-radius: 10px;
     height: 36px;
+  }
+
+  /* contactus styels */
+  #contactus {
+    padding: 50px 0 0;
+  }
+  #contactus .content {
+    border-radius: 0 40px 0px 0px;
+    padding: 48px 0 0px;
+    box-shadow: none;
+  }
+  #contactus .content .title {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+  #contactus .content .caption i {
+    font-size: 16px;
+  }
+  #contactus .content .email,
+  #contactus .content .phone {
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+  #contactus .content .addressText {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  #contactus .content .whatsapp {
+    margin-bottom: 36px;
+  }
+  #contactus .content .mapBox {
+    margin-bottom: 40px;
+  }
+  #contactus .content .formBox {
+    padding: 36px 15px ;
+    border-radius: 0px 50px 0 0;
+    box-shadow: none;
+  }
+  #contactus .content .formPart {
+    padding: 0;
+  }
+  #contactus .content .topFormCloud {
+    position: absolute;
+    top: -2%;
+    left: 2%;
+    max-width: 40%;
+    animation: moveCloud 10s ease 0s infinite normal forwards;
+  }
+  #empty {
+    background: #fff;
+    height: 100px;
   }
 }
 
@@ -1019,4 +1070,3 @@
     height: 313px;
   }
 }
-
