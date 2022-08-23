@@ -12,7 +12,7 @@
                 role="tabpanel"
                 aria-labelledby="product1-tab"
               >
-                <img src="./assets/images/product1.jpg" alt="" />
+                <?php the_post_thumbnail('large'); ?>
               </div>
               <div
                 class="tab-pane fade"
@@ -20,7 +20,7 @@
                 role="tabpanel"
                 aria-labelledby="product2-tab"
               >
-                <img src="./assets/images/product2.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product2.jpg" alt="" />
               </div>
               <div
                 class="tab-pane fade"
@@ -28,7 +28,7 @@
                 role="tabpanel"
                 aria-labelledby="product3-tab"
               >
-                <img src="./assets/images/product3.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product3.jpg" alt="" />
               </div>
             </div>
             <ul class="nav nav-pills" id="productImg-tab" role="tablist">
@@ -81,28 +81,25 @@
           </div>
           <div class="productContent">
             <div class="top">
-              <h1 class="title">جعبه 250 برگ</h1>
-              <img src="./assets/images/stars.png" alt="" />
+              <h1 class="title">
+                <?php the_title(); ?>
+              </h1>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars.png" alt="" />
             </div>
-            <p class="caption">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-              ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-              ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            </p>
+            <div class="caption"> 
+            <?php the_content() ?>
+            </div>
             <div class="properties">
               <div class="property property1">
-                <div class="propertyBg"><img src="./assets/images/property1.png" alt="" /></div>
+                <div class="propertyBg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/property1.png" alt="" /></div>
                 <p>۲۵۰ برگ</p>
               </div>
               <div class="property property2">
-                <div class="propertyBg"><img src="./assets/images/property2.png" alt="" /></div>
+                <div class="propertyBg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/property2.png" alt="" /></div>
                 <p>قدرت جذب بالا</p>
               </div>
               <div class="property property3">
-                <div class="propertyBg"><img src="./assets/images/property3.png" alt="" /></div>
+                <div class="propertyBg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/property3.png" alt="" /></div>
                 <p>بسیار نرم و مقاوم</p>
               </div>
             </div>

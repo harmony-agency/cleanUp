@@ -418,7 +418,6 @@ header .navbar-brand {
 /*================================ Event ================================*/
 #event {
   text-align: center;
-  /* background-image: url(../images/bg-cloud.png); */
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 80px;
@@ -717,7 +716,7 @@ footer .harmonyLogo:hover {
   font-size: 40px;
   margin-bottom: 40px;
 }
-#categoryBanner .content .categoryCaption {
+#categoryBanner .content .categoryCaption p{
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 0;
@@ -833,7 +832,6 @@ footer .harmonyLogo:hover {
 #main .categories {
   display: flex;
   align-items: center;
-  
 }
 
 /* =========================================== singleProduct styles =========================================== */
@@ -902,7 +900,7 @@ footer .harmonyLogo:hover {
   align-items: center;
   margin-bottom: 30px;
 }
-.productContent .title {
+.productContent .title p {
   font-weight: 700;
   font-size: 34px;
   color: #009c88;
@@ -910,7 +908,7 @@ footer .harmonyLogo:hover {
   margin-bottom: 0;
   font-family: "Yekan-Bakh";
 }
-.productContent .caption {
+.productContent .caption p {
   font-weight: 400;
   font-size: 16px;
   color: #343d46;
@@ -1621,4 +1619,14 @@ footer .harmonyLogo:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.archive {
+  background-image: url(../images/categoryBg.png),
+    linear-gradient(1.88deg, #90ccca -22.4%, rgba(238, 246, 246, 0.27) 98.41%); /* W3C */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.archive footer {
+  margin: 0;
 }

@@ -1,26 +1,23 @@
 <?php get_header(); ?>
 
-
+<?php $term = get_queried_object(); ?>
       <section id="categoryBanner">
         <div class="container">
           <div class="content">
             <div class="row">
               <div class="col-md-6">
                 <p class="title">محصولات</p>
-                <h1 class="categoryTitle">محصولات جعبه کلین آپ</h1>
-                <p class="categoryCaption">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                  ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                  و با ل
-                </p>
+                <h1 class="categoryTitle"> 
+                    <?php echo  get_field( "category_title", $term ); ?>
+                </h1>
+                <div class="categoryCaption">
+                    <?php echo get_field( "category_description", $term ); ?>
+                </div>
               </div>
               <div class="col-md-6">
-                <img
-                  src="assets/images/categoryBanner.png"
-                  alt=""
-                  class="categoryImg"
-                />
+              
+                <?php $category_picture = get_field( "category_picture", $term ); ?>
+              <img src="<?php echo $category_picture['sizes']['large'] ?>" alt="" />
               </div>
             </div>
           </div>
@@ -29,304 +26,45 @@
 
       <section id="main">
         <div class="container">
-          <h1 class="title">دسته بندی محصولات جعبه‌ای کلین آپ</h1>
+          <div class="title">
+            <?php echo get_field( "category_slider_title", $term ); ?>
+          </div>
+          <?php $args = array(
+               'taxonomy' => 'health-product',
+               'orderby' => 'name',
+               'order'   => 'ASC'
+           );
+
+          $cats = get_categories($args);
+          foreach($cats as $cat) : ?>
           <div class="categories">
             <div class="col-4 intro">
               <div class="introBg"></div>
               <p class="titleName">کلکسیون</p>
-              <h2 class="name">دکوراسیون</h2>
-              <p class="subName">۱۰۰ برگ</p>
+              <h2 class="name">
+                <?php echo $cat->name; ?>
+              </h2>
+              <p class="subName">
+              <?php get_field('sheet_number'); ?>
+              برگ</p>
               <div class="categoryFooter">
-                <span class="number">۳ محصول</span>
-                <div class="swiper-button-next" id="next">
+                <span class="number"> <?php echo $cat->category_count; ?>
+                  
+                محصول</span>
+                <div class="swiper-button-next" id="next1">
                   <img src="./assets/images/prev.png" alt="" />
                 </div>
-                <div class="swiper-button-prev" id="prev">
+                <div class="swiper-button-prev" id="prev1">
                   <img src="./assets/images/next.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="swiper categorySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product2.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">بافت</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product3.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">250 برگ</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">۱۵۰ برگ</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <?php get_template_part("loop-templates/contentCard", "product", array(
+        'cat_slug'   => $cat->slug
+    )); ?>
+
           </div>
-          <div class="categories">
-            <div class="col-4 intro">
-              <div class="introBg"></div>
-              <p class="titleName">کلکسیون</p>
-              <h2 class="name">دکوراسیون</h2>
-              <p class="subName">۱۰۰ برگ</p>
-              <div class="categoryFooter">
-                <span class="number">۳ محصول</span>
-                <div class="swiper-button-next" id="next">
-                  <img src="./assets/images/prev.png" alt="" />
-                </div>
-                <div class="swiper-button-prev" id="prev">
-                  <img src="./assets/images/next.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper category2Swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product2.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">بافت</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product3.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">250 برگ</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">۱۵۰ برگ</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="categories">
-            <div class="col-4 intro">
-              <div class="introBg"></div>
-              <p class="titleName">کلکسیون</p>
-              <h2 class="name">دکوراسیون</h2>
-              <p class="subName">۱۰۰ برگ</p>
-              <div class="categoryFooter">
-                <span class="number">۳ محصول</span>
-                <div class="swiper-button-next" id="next">
-                  <img src="./assets/images/prev.png" alt="" />
-                </div>
-                <div class="swiper-button-prev" id="prev">
-                  <img src="./assets/images/next.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper category3Swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product2.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">بافت</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product3.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">250 برگ</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">۱۵۰ برگ</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box">
-                    <div class="imgBox">
-                      <img src="assets/images/product1.jpg" alt="" />
-                    </div>
-                    <div class="card-footer">
-                      <span class="category">نام محصول</span>
-                      <a href="" class="seeAll"
-                        >مشاهده <i class="fas fa-angle-left"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php endforeach ?>
         </div>
       </section>
 

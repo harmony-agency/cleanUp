@@ -2,6 +2,9 @@
 <!-- footer -->
 <footer>
         <div class="container">
+           <?php
+            $logo_footer = get_field( "LogoFooter" , 'option');
+            ?>
           <div class="content">
             <div class="row">
               <div class="col-md-3 desktop">
@@ -24,7 +27,7 @@
               </div>
               <div class="col-md-6">
                 <img
-                  src="assets/images/logo-footer.png"
+                  src="<?php echo $logo_footer['sizes']['medium'] ?>"
                   alt=""
                   class="logo-footer"
                 />
@@ -110,7 +113,7 @@
                 <div class="socials">
                   <div class="socialsBox">
                     <a href="#">
-                      <img src="./assets/images/aparat.png" alt="" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aparat.png" alt="" />
                     </a>
                   </div>
                   <div class="socialsBox">
@@ -134,20 +137,20 @@
             >
               <span class="hover-company desktop">
                 <img
-                  src="assets/images/harmony-name.png"
+                  src="<?php echo get_template_directory_uri(); ?>/assets/images/harmony-name.png"
                   loading="lazy"
                   alt=""
                 />
               </span>
               <img
                 class="harmonyLogo desktop"
-                src="assets/images/harmony.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/harmony.png"
                 loading="lazy"
                 alt=""
               />
               <span class="hover-company desktop">Design by</span>
               <img
-                src="assets/images/harmonyLogoMobile.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/harmonyLogoMobile.png"
                 alt=""
                 class="mobile harmonyLogo"
               />

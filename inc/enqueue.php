@@ -8,7 +8,6 @@
     $the_theme     = wp_get_theme();
     $theme_version = $the_theme->get( 'Version' );
 
-    
     //swipper_css
     $swipper_css_version = $theme_version . '.' . filemtime( get_template_directory() . '/assets/css/swiper.min.css' );
     wp_enqueue_style( 'swiper-styles', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), $swipper_css_version );
@@ -29,12 +28,10 @@
 
     wp_enqueue_script( 'jquery' );
 
-    $js_version = $theme_version . '.' . filemtime( get_template_directory() . '/js/theme.min.js' );
-    wp_enqueue_script( 'cleanup-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $js_version, true );
 
     //swipper_js
     $swipper_js_version = $theme_version . '.' . filemtime( get_template_directory() . '/js/swiper.min.js' );
-    wp_enqueue_script( 'swiper-scripts', get_template_directory_uri() . '/js/swiper.min.js', array(), $swipper_js_version, true );
+    wp_enqueue_script( 'swiper-scripts', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), $swipper_js_version, true );
 
 
 

@@ -11,6 +11,8 @@ defined( 'ABSPATH' ) || exit;
 $harmonyTheme_includes = array(
 
   '/enqueue.php',                         // Enqueue scripts and styles.
+  '/setup.php',                         // Enqueue scripts and styles.
+  '/custom-post-type-product.php',     // Enqueue scripts and styles.
 
 );
 foreach ( $harmonyTheme_includes as $file ) {

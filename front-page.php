@@ -1,92 +1,37 @@
 <?php get_header(); ?>
 <!-- slide -->
       <section id="slide">
+        <?php 
+        $sliders = get_field( "slider" );
+        ?>
         <div class="swiper slideSwiper">
           <div class="swiper-wrapper">
+            <?php foreach($sliders as $slider): ?>
             <div class="swiper-slide slider1">
               <img
-                src="./assets/images/slider1CloudLeft.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/slider1CloudLeft.png"
                 alt=""
                 class="slider1CloudLeft desktop"
               />
               <img
-                src="./assets/images/slider1CloudRight.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/slider1CloudRight.png"
                 alt=""
                 class="slider1CloudRight desktop"
               />
-
               <div class="container">
                 <div class="content">
-                  <h1>کلین آپ, لایه‌های نرم زندگی</h1>
+                  <h1><?php echo $slider['main-title'] ?></h1>
                   <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-                    و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                    چاپ، و با ل
+                  <?php echo $slider['description'] ?>
                   </p>
-                  <a href="" class="btnCall">کال تو اکشن</a>
+                  <a href="" class="btnCall"> <?php echo $slider['button-text'] ?></a>
                 </div>
                 <div class="picture">
-                  <img src="assets/images/img-slide1.png" alt="" />
+                  <img src="<?php echo $slider['main-picture']['sizes']['large'] ?>" alt="" />
                 </div>
               </div>
             </div>
-            <div class="swiper-slide slider1">
-              <img
-                src="./assets/images/slider1CloudLeft.png"
-                alt=""
-                class="slider1CloudLeft desktop"
-              />
-              <img
-                src="./assets/images/slider1CloudRight.png"
-                alt=""
-                class="slider1CloudRight desktop"
-              />
-
-              <div class="container">
-                <div class="content">
-                  <h1>کلین آپ, لایه‌های نرم زندگی</h1>
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-                    و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                    چاپ، و با ل
-                  </p>
-                  <a href="" class="btnCall">کال تو اکشن</a>
-                </div>
-                <div class="picture">
-                  <img src="assets/images/img-slide1.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide slider1">
-              <img
-                src="./assets/images/slider1CloudLeft.png"
-                alt=""
-                class="slider1CloudLeft desktop"
-              />
-              <img
-                src="./assets/images/slider1CloudRight.png"
-                alt=""
-                class="slider1CloudRight desktop"
-              />
-
-              <div class="container">
-                <div class="content">
-                  <h1>کلین آپ, لایه‌های نرم زندگی</h1>
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
-                    و ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                    چاپ، و با ل
-                  </p>
-                  <a href="" class="btnCall">کال تو اکشن</a>
-                </div>
-                <div class="picture">
-                  <img src="assets/images/img-slide1.png" alt="" />
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -99,7 +44,7 @@
         <div class="container">
           <h1 class="section-title">
             <img
-              src="./assets/images/cloud.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud.png"
               class="productCloudTop mobile"
               alt=""
             />
@@ -118,7 +63,7 @@
                 aria-controls="box"
                 aria-selected="false"
               >
-                <img src="./assets/images/boxImg.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/boxImg.png" alt="" />
 
                 <span class="box-cat">جعبه</span>
               </button>
@@ -134,7 +79,7 @@
                 aria-controls="toilet-paper-"
                 aria-selected="true"
               >
-                <img src="./assets/images/paperImg.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/paperImg.png" alt="" />
 
                 <span class="box-cat toilet-paper-">کاغذ توالت</span>
               </button>
@@ -150,7 +95,7 @@
                 aria-controls="paper-towel"
                 aria-selected="true"
               >
-                <img src="./assets/images/towel.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/towel.png" alt="" />
                 <span class="box-cat paper towel">حوله کاغذی</span>
               </button>
             </li>
@@ -165,7 +110,7 @@
                 aria-controls="economical"
                 aria-selected="true"
               >
-                <img src="./assets/images/economicalImg.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/economicalImg.png" alt="" />
                 <span class="box-cat economical">دستمال اقتصادی</span>
               </button>
             </li>
@@ -182,7 +127,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">دکوراسیون</span>
@@ -195,7 +140,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product2.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product2.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">بافت</span>
@@ -208,7 +153,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product3.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product3.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">250 برگ</span>
@@ -221,7 +166,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">۱۵۰ برگ</span>
@@ -249,7 +194,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">دکوراسیون</span>
@@ -262,7 +207,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product2.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product2.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">بافت</span>
@@ -275,7 +220,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product3.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product3.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">250 برگ</span>
@@ -288,7 +233,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">۱۵۰ برگ</span>
@@ -316,7 +261,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">دکوراسیون</span>
@@ -329,7 +274,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product2.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product2.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">بافت</span>
@@ -342,7 +287,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product3.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product3.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">250 برگ</span>
@@ -355,7 +300,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">۱۵۰ برگ</span>
@@ -383,7 +328,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">دکوراسیون</span>
@@ -396,7 +341,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product2.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product2.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">بافت</span>
@@ -409,7 +354,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product3.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product3.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">250 برگ</span>
@@ -422,7 +367,7 @@
                   <div class="swiper-slide">
                     <div class="box">
                       <div class="imgBox">
-                        <img src="assets/images/product1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product1.jpg" alt="" />
                       </div>
                       <div class="card-footer">
                         <span class="category">۱۵۰ برگ</span>
@@ -442,7 +387,7 @@
           </div>
         </div>
         <img
-          src="./assets/images/cloud.png"
+          src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud.png"
           class="productCloudBottom mobile"
           alt=""
         />
@@ -451,61 +396,41 @@
       <!-- Design by Harmony Agency -->
 
       <section id="sectionCombine">
-        <img src="./assets/images/cloud.png" alt="" class="topCloud" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud.png" alt="" class="topCloud" />
 
         <!-- banner -->
         <section id="banner">
+        <?php 
+        $event_sliders = get_field( "slider_event" );
+        ?>
           <h1 class="section-title">رویدادهای کلین آپ</h1>
           <div class="swiper bannerSwiper">
             <div class="swiper-wrapper">
+            <?php foreach($event_sliders as $slider_event): ?>            
               <div class="swiper-slide">
                 <div
                   class="content"
                   data-bs-toggle="modal"
                   data-bs-target="#modal1"
                 >
-                  <img src="assets/images/banner.png" alt="" class="desktop" />
-                  <img src="assets/images/bannerMo.png" alt="" class="mobile" />
+                  <img src="<?php echo $slider_event['event-image']['url'] ?>" alt="" class="desktop" />
+
+                  <img src="<?php echo $slider_event['event-imageMobile']['sizes']['large'] ?>" alt="" class="mobile" />
+
+
                   <div class="seeVideo">
-                    <img src="./assets/images/seeVideo.png" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/seeVideo.png" alt="" />
                     <p>تماشای ویدیو</p>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div
-                  class="content"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal1"
-                >
-                  <img src="assets/images/banner.png" alt="" class="desktop" />
-                  <img src="assets/images/bannerMo.png" alt="" class="mobile" />
-                  <div class="seeVideo">
-                    <img src="./assets/images/seeVideo.png" alt="" />
-                    <p>تماشای ویدیو</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="content"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal1"
-                >
-                  <img src="assets/images/banner.png" alt="" class="desktop" />
-                  <img src="assets/images/bannerMo.png" alt="" class="mobile" />
-                  <div class="seeVideo">
-                    <img src="./assets/images/seeVideo.png" alt="" />
-                    <p>تماشای ویدیو</p>
-                  </div>
-                </div>
-              </div>
+              <?php endforeach; ?>
             </div>
             <div class="swiper-button-next">
-              <img src="./assets/images/prev.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/prev.png" alt="" />
             </div>
             <div class="swiper-button-prev">
-              <img src="./assets/images/next.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.png" alt="" />
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -519,19 +444,19 @@
               <div class="col-md-4">
                 <div class="content">
                   <div class="eventBox eventBox1">
-                    <img src="assets/images/event1.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/event1.jpg" alt="" />
                     <p>
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
                       و با استفاده از طراحان گرافیک است.
                     </p>
                     <i class="fa-brands fa-instagram"></i>
                     <img
-                      src="./assets/images/logo.png"
+                      src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
                       alt=""
                       class="logoPost"
                     />
                     <div class="boxHover">
-                      <img src="./assets/images/logo-footer.png" alt="" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="" />
                       <p>مارا در اینستاگرام دنبال کنید</p>
                       <div class="socialsBox">
                         <a href="#">
@@ -546,7 +471,7 @@
                 <div class="content">
                   <div class="eventBox eventBox2">
                     <img
-                      src="assets/images/event2.jpg"
+                      src="<?php echo get_template_directory_uri(); ?>/assets/images/event2.jpg"
                       alt=""
                       class="imagePost"
                     />
@@ -555,13 +480,13 @@
                       و با استفاده از طراحان گرافیک است.
                     </p>
                     <img
-                      src="./assets/images/logoText.png"
+                      src="<?php echo get_template_directory_uri(); ?>/assets/images/logoText.png"
                       alt=""
                       class="logoPost"
                     />
                     <i class="fa-brands fa-instagram"></i>
                     <div class="boxHover">
-                      <img src="./assets/images/logo-footer.png" alt="" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="" />
                       <p>مارا در اینستاگرام دنبال کنید</p>
                       <div class="socialsBox">
                         <a href="#">
@@ -575,19 +500,19 @@
               <div class="col-md-4">
                 <div class="content">
                   <div class="eventBox eventBox1">
-                    <img src="assets/images/event1.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/event1.jpg" alt="" />
                     <p>
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
                       و با استفاده از طراحان گرافیک است.
                     </p>
                     <i class="fa-brands fa-instagram"></i>
                     <img
-                      src="./assets/images/logo.png"
+                      src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
                       alt=""
                       class="logoPost"
                     />
                     <div class="boxHover">
-                      <img src="./assets/images/logo-footer.png" alt="" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="" />
                       <p>مارا در اینستاگرام دنبال کنید</p>
                       <div class="socialsBox">
                         <a href="#">
@@ -602,7 +527,7 @@
             <a href="" class="btnCall">صفحه اینستاگرام ما</a>
           </div>
         </section>
-        <img src="./assets/images/cloud.png" alt="" class="bottomCloud" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud.png" alt="" class="bottomCloud" />
       </section>
 
       <!-- Design by Harmony Agency -->
@@ -612,19 +537,13 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <img src="assets/images/about.png" alt="" class="desktop" />
-              <img src="assets/images/aboutMobile.png" alt="" class="mobile" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about.png" alt="" class="desktop" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutMobile.png" alt="" class="mobile" />
             </div>
             <div class="col-md-6">
               <h1>درباره برند کلین آپ و محصولاتش</h1>
               <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                ...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                ...
+              <?php echo get_field( "aboutUs-text" ); ?>
               </p>
               <a href="" class="btnCall">درباره ما</a>
             </div>
